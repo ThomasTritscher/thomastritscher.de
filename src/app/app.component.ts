@@ -5,32 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  images = ['img.jpg', 'img3.jpg', 'img8.jpg', 'img12.jpg'];
-  currentImage = 0;
-  showImage = true;
+export class AppComponent implements OnInit{
+  
+  constructor() { }
 
-
-
-  ngOnInit() {
-    this.updateImage();
+  ngOnInit(): void {
+    
   }
-
-
-  updateImage() {
-
-    setInterval(() => { 
-      this.currentImage++;
-      this.currentImage = this.currentImage % this.images.length;
-      this.showImage = false;
-
-      setTimeout(() => {
-        this.showImage = true;
-      },10);
-    },8000);
-  }
-
-
 
 
 }
