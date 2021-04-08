@@ -1,4 +1,4 @@
-<header>
+<header [class.headerDark]="darkMode">
 
 
 
@@ -7,7 +7,7 @@
   <img *ngIf="darkMode"  routerLink="/" src="../assets/icons/Logo-black.png" alt="">
 
 
-  <div>
+  <div [class.darkLinks]="darkMode">
     <a routerLink="/">Home</a>
     <a href="">Curriculum</a>
     <a href="">Projects</a>
