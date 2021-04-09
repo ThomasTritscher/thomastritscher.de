@@ -1,46 +1,69 @@
-header {
-  position: absolute;
+// header {
+//   position: absolute;
+//   top: 0;
+//   left    : 0;
+//   right   : 0;
+//   height  : 80px;
+//   z-index : 1;
+//   padding-left: 120px;
+//   padding-right: 120px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   img {
+//     height: 50px;
+//     cursor: pointer;
+
+//   }
+//   a {
+//     color: white;
+//     text-decoration: none;
+//     margin-left: 32px;
+//     font-weight: 600;
+//     font-size: 1.5rem;
+
+//     &:hover {
+//       color: rgba(255,255,255, 0.8);
+//     }
+//   }
+// }
+// .headerDark {
+//   background-color: white;
+//   box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2)
+// }
+
+// .darkLinks {
+//   a {
+//     color: black;
+//   }
+
+//   &:hover {
+//     color: rgba($color: #000000, $alpha: 0.8)
+//   }
+// }
+
+menu {
+  position: fixed;
   top: 0;
-  left    : 0;
-  right   : 0;
-  height  : 80px;
-  z-index : 1;
-  padding-left: 120px;
-  padding-right: 120px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  img {
-    height: 50px;
-    cursor: pointer;
-
+  right: 50px;
+  
+  span{
+    font-size: 4em;
   }
-  a {
-    color: white;
-    text-decoration: none;
-    margin-left: 32px;
-    font-weight: 600;
-    font-size: 1.5rem;
 
-    &:hover {
-      color: rgba(255,255,255, 0.8);
-    }
+
+}
+.sm {
+  position: absolute;
+  right: 100px;
+  top:500px;
+
+
+  img{
+    width: 40px;
+    height: 40px;
   }
 }
-.headerDark {
-  background-color: white;
-  box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2)
-}
 
-.darkLinks {
-  a {
-    color: black;
-  }
-
-  &:hover {
-    color: rgba($color: #000000, $alpha: 0.8)
-  }
-}
 
