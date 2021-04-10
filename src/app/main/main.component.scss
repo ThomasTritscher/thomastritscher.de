@@ -54,18 +54,11 @@
   height          : 100vh;
   background-color: white;
 
-}
-
-.h-logo {
-  position: fixed;
-  top     : 32px;
-  left    : 40px;
-  
-
   img {
-    width     : 80px;
-    height    : 50px;
-    object-fit: cover;
-
+    position: relative;
+    top: 200px;
+    right: 300px;
   }
+
 }
+
