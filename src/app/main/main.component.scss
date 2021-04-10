@@ -3,12 +3,13 @@
   height          : 100vh;
   background-color: #F3F3F3;
   display         : flex;
-  justify-content : flex-start;
-  align-items     : center;
+  justify-content : center;
+  flex-direction: column;
   
   
   .content {
     margin-left: 200px;
+    display: flex;
   
   }
   span{
@@ -19,6 +20,7 @@
 
 
   h1 {
+    margin: 0;
     font-size  : 5em;
     font-weight: 600;
     color: #585858;
@@ -44,6 +46,22 @@
   }
 
 }
+
+.scroll-nav {
+  position: fixed;
+    left: -100px;
+    bottom: 120px;
+    display: flex;
+    transform: rotate(
+90deg
+);
+}
+
+
+
+
+
+
 
 
 .bg-right {
