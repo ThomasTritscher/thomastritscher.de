@@ -1,13 +1,13 @@
-*{
+* {
   box-sizing: border-box;
 }
 
 .bg-wrap {
   position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: -1;
+  left    : 0;
+  right   : 0;
+  top     : 0;
+  z-index : -1;
 }
 
 .bg-left {
@@ -15,47 +15,50 @@
   height          : 100vh;
   background-color: #B2DFDB;
   display         : block;
-  position: absolute;
-  opacity: 0.6;
-  transform: translate3d(-30%,0,0);
-  transition: transfrom .7s ease-in-out;
-  
-  
-  
+  position        : absolute;
+  opacity         : 0.6;
+  transform       : translate3d(-30%, 0, 0);
+  transition      : transform .7s ease-in-out;
+
+
+
   .content {
     margin-left: 200px;
-    display: flex;
-  
+    display    : flex;
+
   }
-  span{
-    color: #ffa500;
-    font-size: 2em;
+
+  span {
+    color      : #ffa500;
+    font-size  : 2em;
     font-weight: bold;
   }
 
 
   h1 {
-    margin: 0;
+    margin     : 0;
     font-size  : 5em;
     font-weight: 600;
-    color: #585858;
+    color      : #585858;
 
   }
+
   h2 {
     font-size: 2.5em;
-    color: #9E9E9E;
+    color    : #9E9E9E;
   }
 
   ul {
     display: flex;
   }
+
   li {
     list-style: none;
 
   }
 
   a {
-    color: #5F5F5F;
+    color          : #5F5F5F;
     text-decoration: none;
 
   }
@@ -63,59 +66,60 @@
 }
 
 .scroll-nav {
-  position: fixed;
-    left: -100px;
-    bottom: 120px;
-    display: flex;
-    transform: rotate(90deg);
+  position : fixed;
+  left     : -100px;
+  bottom   : 120px;
+  display  : flex;
+  transform: rotate(90deg);
 }
+
 .bg {
-  position: fixed;
-    height: 100%;
-    max-width: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0;
-    pointer-events: none;
+  position      : fixed;
+  height        : 100%;
+  max-width     : 100%;
+  width         : 100%;
+  top           : 0;
+  left          : 0;
+  right         : 0;
+  bottom        : 0;
+  padding       : 0;
+  pointer-events: none;
 
 }
-.s-three{
+
+.s-three {
   background-color: rgb(9, 255, 0);
 
 }
-.s-four{
+
+.s-four {
   background-color: rgb(255, 0, 242);
-  
+
 }
-.s-five{
+
+.s-five {
   background-color: rgb(255, 8, 0);
- 
+
 }
+
 picture {
-  width: 35vw;
-  height: 70vh;
-  position: absolute;
-  bottom: 15vh;
-  left: 55vw;
+  width           : 35vw;
+  height          : 70vh;
+  position        : absolute;
+  bottom          : 15vh;
+  left            : 55vw;
   background-color: #F0F0F0;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  align-items     : center;
+  display         : flex;
+  justify-content : center;
 
 
-  img{
-    width: 100px;
+  img {
+    width : 100px;
     height: 100px;
   }
 }
 
-
-
-
-
-
-
-
+.transform-bg {
+  transform: translate3d(-100%, 0, 0);
+}

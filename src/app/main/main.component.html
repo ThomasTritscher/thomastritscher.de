@@ -4,8 +4,8 @@
     </div>
   </div>
   <div>
-    <div (wheel)="changeLayers()" class="bg-wrap">
-      <div class="bg-left">
+    <div (wheel)="changeLayers(); changeBg()" class="bg-wrap">
+      <div id="bg-left" class="bg-left">
         <!-- <div class="content">
       <div class="scroll-nav">
         <ul>
@@ -65,7 +65,7 @@
         </li>
       </ul>
     </nav> -->
-    <section [ngStyle]="{'opacity' : '1'}" [style.z-index]="layer? '0' :'9'" class="bg">
+    <section  [style.z-index]="layer? '0' :'9'" class="bg">
       <!-- <picture>
         <img src="./assets/img/img3.jpg" alt="">
       </picture> -->

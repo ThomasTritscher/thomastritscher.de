@@ -15,7 +15,12 @@ export class MainComponent implements OnInit {
 
   layer = true;
 
+
   changeLayers() {
-   this.layer = false;
+    this.layer = false;
+
+  }
+  changeBg() {
+    document.getElementById('bg-left')?.classList.add('transform-bg');
   }
 }
