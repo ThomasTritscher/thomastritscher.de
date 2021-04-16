@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { MainComponent } from './main/main.component';
+import { OuterFrameComponent } from './outer-frame/outer-frame.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { MainComponent } from './main/main.component';
     ImprintComponent,
     DataProtectionComponent,
     MainComponent,
+    OuterFrameComponent,
+    MenuComponent,
   
   ],
   imports: [
