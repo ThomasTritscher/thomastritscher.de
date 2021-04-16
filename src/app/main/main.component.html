@@ -1,6 +1,12 @@
 <main>
-  <div class="bg-left">
-    <div class="content">
+  <div>
+    <div class="outer-frame">
+    </div>
+  </div>
+  <div>
+    <div (wheel)="changeLayers()" class="bg-wrap">
+      <div class="bg-left">
+        <!-- <div class="content">
       <div class="scroll-nav">
         <ul>
           <li>
@@ -27,49 +33,52 @@
         <p>SCROLLDOWN___________</p>
       </div>
       <div class="info">
-      <div class="headline">
-        <h2>portfolio 2021</h2>
-        <span>&lt;</span>
-        <h1>thomas
-          <br>
-          tritscher
-        </h1><span>&gt;</span>
+        <div class="headline">
+          <h2>portfolio 2021</h2>
+          <span>&lt;</span>
+          <h1>thomas
+            <br>
+            tritscher
+          </h1><span>&gt;</span>
+        </div>
+
+     
+      </div> -->
+
+        <!-- </div> -->
       </div>
-
-      <nav class="h-nav">
-        <ul>
-          <li>
-            <span>&macr;</span>
-            <a href="">Curriculum</a>
-          </li>
-          <li>
-            <a href="">Person</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </div>
-      
+    <div class="scroll-hint">
+
     </div>
+    <!-- <nav class="h-nav">
+      <ul>
+        <li>
+          <span>&macr;</span>
+          <a href="">Curriculum</a>
+        </li>
+        <li>
+          <a href="">Person</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav> -->
+    <section [ngStyle]="{'opacity' : '1'}" [style.z-index]="layer? '0' :'9'" class="bg">
+      <!-- <picture>
+        <img src="./assets/img/img3.jpg" alt="">
+      </picture> -->
 
+    </section>
+    <section [ngStyle]="{'opacity' : '0'}" class="bg">
+      <picture>
+        <img src="./assets/img/img12.jpg" alt="">
+      </picture>
+    </section>
+    <!-- <section [ngStyle]="{'z-index' : '0'}" class="bg s-three"></section>
+    <section [ngStyle]="{'z-index' : '0'}" class="bg s-four"></section>
+    <section [ngStyle]="{'z-index' : '0'}" class="bg s-five"></section> -->
   </div>
 
-  <div class="bg-right">
-    <img src="../assets/img/sound.png" alt="">
-  </div>
-  <div class="sm-container">
-    <ul>
-      <li>
-        <a href="">Twitter</a>
-      </li>
-      <li>
-        <a href="">Github</a>
-      </li>
-      <li>
-        <a href="">Facebook</a>
-      </li>
-    </ul>
-  </div>
 </main>

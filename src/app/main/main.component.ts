@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -12,4 +12,10 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  layer = true;
+
+  changeLayers() {
+   this.layer = false;
+  }
 }
