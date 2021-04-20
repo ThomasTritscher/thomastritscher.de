@@ -29,7 +29,7 @@
   }
 
   span {
-    color      : #ffa500;
+    color      : #FF5722;
     font-size  : 2em;
     font-weight: bold;
   }
@@ -87,39 +87,105 @@
 
 }
 
-.s-three {
-  background-color: rgb(9, 255, 0);
-
+.transform-bg {
+  transform: translate3d(-100%, 0, 0);
 }
 
-.s-four {
-  background-color: rgb(255, 0, 242);
-
+.active {
+  z-index: 11;
 }
 
-.s-five {
-  background-color: rgb(255, 8, 0);
-
+.showImg {
+  opacity: 1;
 }
 
-picture {
-  width           : 35vw;
-  height          : 70vh;
-  position        : absolute;
-  bottom          : 15vh;
-  left            : 55vw;
-  background-color: #F0F0F0;
-  align-items     : center;
-  display         : flex;
-  justify-content : center;
+.hiddenImg {
+  opacity: 0;
+}
 
+.img-wrapper {
+  width     : 35vw;
+  height    : 70vh;
+  overflow  : hidden;
+  position  : absolute;
+  bottom    : 15vh;
+  left      : 55vw;
+  transition: all .8s cubic-bezier(.87, 0, .3, 1.04);
+  opacity   : 0;
+}
 
-  img {
-    width : 100px;
-    height: 100px;
+.img-wrapper-bg {
+  height    : 100%;
+  width     : 100%;
+  position  : absolute;
+  display   : grid;
+  background: #B2DFDB;
+  opacity   : 0;
+}
+
+.section-image-one {
+  width           : 80%;
+  margin          : 0 auto;
+  align-self      : center;
+  height          : 50px;
+  background-color: green;
+
+  img{
+    width: 100%;
   }
 }
 
-.transform-bg {
-  transform: translate3d(-100%, 0, 0);
+.animation-wrapper {
+  width     : 35vw;
+  height    : 70vh;
+  overflow  : hidden;
+  position  : absolute;
+  bottom    : 15vh;
+  left      : 55vw;
+  opacity   : 0;
+  transition: all .8s cubic-bezier(.87, 0, .3, 1.04);
+}
+
+.curtain-left {
+  width     : 100%;
+  height    : 105%;
+  display   : grid;
+  position  : absolute;
+  bottom    : 0;
+  background: rgb(255, 87, 34,);
+  transition: all 1.2s cubic-bezier(.87, 0, .3, 1.04);
+}
+
+.curtain-right {
+  width     : 100%;
+  height    : 105%;
+  display   : grid;
+  position  : absolute;
+  bottom    : 0;
+  background: rgb(255, 87, 34,);
+  transition: all 1.2s cubic-bezier(.87, 0, .3, 1.04);
+
+
+}
+
+.o-active {
+  opacity: 1;
+}
+
+.button {
+  position  : absolute;
+  background: red;
+  top       : 50%;
+  bottom    : 50%;
+  left      : 50%;
+  width     : 200px;
+  height    : 200px;
+  cursor    : pointer;
+  z-index   : 12;
+}
+.c-active{
+  transform: translate3d(-100%,0,0);
+}
+.c-inactive{
+  transform: translate3d(100%,0,0);
 }

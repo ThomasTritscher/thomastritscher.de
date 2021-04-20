@@ -11,6 +11,8 @@ import { OuterFrameComponent } from './outer-frame/outer-frame.component';
 import { MenuComponent } from './menu/menu.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,8 @@ import { MenuComponent } from './menu/menu.component';
     MainComponent,
     OuterFrameComponent,
     MenuComponent,
+    
+   
   
   ],
   imports: [
