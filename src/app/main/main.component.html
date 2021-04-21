@@ -4,7 +4,7 @@
     </div>
   </div>
 
-  <div (wheel)="changeBg(); firstWheelroll()" class="bg-wrap">
+  <div (wheel)="changeBg(); firstWheelEvent()" class="bg-wrap">
     <div id="bg-left" class="bg-left">
       <!-- <div class="content">
       <div class="scroll-nav">
@@ -69,14 +69,19 @@
     <span [style.background-color]="'red'">Hello</span>
 
   </section>
-  <button (click)="secondWheelroll()">Click</button>
-  <button (click)="thirdWheelroll()">Click</button>
+  <button (click)="secondWheelEvent()">Click</button>
+  <button (click)="thirdWheelEvent()">Click</button>
 
   <section id="s2" class="bg"><span [style.background-color]="'green'">TWO</span>
     <div id="img-w" class="img-wrapper">
       <div id="img-w-bg" class="img-wrapper-bg">
         <picture class="section-image-one">
           <img src="./assets/img/img.jpg" alt="">
+        </picture>
+      </div>
+      <div id="img-w-bg2" class="img-wrapper-bg">
+        <picture class="section-image-one">
+          <img src="./assets/img/img3.jpg" alt="">
         </picture>
       </div>
 
@@ -91,6 +96,18 @@
 
   </section>
   <section id="s3" class="bg"><span [style.background-color]="'blue'">THREE</span></section>
-  <section id="s4" class="bg"><span [style.background-color]="'brown'">FOUR</span></section>
+  <section id="s4" class="bg"><span [style.background-color]="'brown'">FOUR</span>
+  <div class="content-wrapper">
+    <div class="form-wrap">
+      <div class="content-form">
+        <span class="p-wrap">
+          <label for="textme">Want wo work with
+            <span><b>me?</b></span>
+          </label>
+        </span>
+      </div>
+    </div>
+  </div>
+  </section>
  
 </main>

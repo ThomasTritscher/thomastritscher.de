@@ -1,3 +1,16 @@
+// variables
+$primarycolor      : #009688;
+$lightprimarycolor : #B2DFDB;
+$darkprimarycolor  : #00796B;
+$accentcolor       : #FF5722;
+$primarytext       : #212121;
+$text_icons        : #FFFFFF;
+$secondarytext     : #757575;
+$dividertext       : #BDBDBD;
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +26,7 @@
 .bg-left {
   width           : 100vw;
   height          : 100vh;
-  background-color: #B2DFDB;
+  background-color: $primarycolor;
   display         : block;
   position        : absolute;
   opacity         : 0.6;
@@ -110,7 +123,7 @@
   position  : absolute;
   bottom    : 15vh;
   left      : 55vw;
-  transition: all .8s cubic-bezier(.87, 0, .3, 1.04);
+  transition: all .8s cubic-bezier(.87, 0, .3, 1.04); //at screen changes 
   opacity   : 0;
 }
 
@@ -119,7 +132,7 @@
   width     : 100%;
   position  : absolute;
   display   : grid;
-  background: #B2DFDB;
+  background: $primarycolor;
   opacity   : 0;
 }
 
@@ -152,7 +165,7 @@
   display   : grid;
   position  : absolute;
   bottom    : 0;
-  background: rgb(255, 87, 34,);
+  background: white;
   transition: all 1.2s cubic-bezier(.87, 0, .3, 1.04);
 }
 
@@ -162,7 +175,7 @@
   display   : grid;
   position  : absolute;
   bottom    : 0;
-  background: rgb(255, 87, 34,);
+  background: white;
   transition: all 1.2s cubic-bezier(.87, 0, .3, 1.04);
 
 

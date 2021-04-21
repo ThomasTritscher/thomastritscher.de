@@ -12,21 +12,11 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  
-
-  // layer = true;
-
-
-  // changeLayers() {
-  //   this.layer = false;
-
-  // }
   changeBg() {
     document.getElementById('bg-left')?.classList.add('transform-bg');
   }
 
-  firstWheelroll() {
+  firstWheelEvent() {
     document.getElementById('s1')?.classList.remove('active');
     document.getElementById('s2')?.classList.add('active');
     document.getElementById('img-w')?.classList.add('o-active');
@@ -36,12 +26,17 @@ export class MainComponent implements OnInit {
     document.getElementById('c-r')?.classList.add('c-inactive')
     
   }
-  secondWheelroll() {
+  secondWheelEvent() {
     document.getElementById('s2')?.classList.remove('active');
     document.getElementById('s3')?.classList.add('active');
+    document.getElementById('img-w-bg2')?.classList.add('o-active');
+    document.getElementById('img-w-bg')?.classList.remove('o-active');
+    document.getElementById('c-l')?.classList.add('c-inactive');
+    document.getElementById('c-r')?.classList.add('c-active')
+    
     
   }
-  thirdWheelroll() {
+  thirdWheelEvent() {
     document.getElementById('s3')?.classList.remove('active');
     document.getElementById('s4')?.classList.add('active');
   }
