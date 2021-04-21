@@ -11,5 +11,8 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  overlayMenu() {
+    document.getElementById('m-m-overlay')?.classList.add ('active')
+  }
 
 }
