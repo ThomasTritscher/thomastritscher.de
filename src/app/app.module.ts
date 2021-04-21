@@ -9,6 +9,8 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 import { MainComponent } from './main/main.component';
 import { OuterFrameComponent } from './outer-frame/outer-frame.component';
 import { MenuComponent } from './menu/menu.component';
+import { SectionsComponent } from './sections/sections.component';
+import { ScrollhintComponent } from './scrollhint/scrollhint.component';
 
 
 
@@ -21,6 +23,8 @@ import { MenuComponent } from './menu/menu.component';
     MainComponent,
     OuterFrameComponent,
     MenuComponent,
+    SectionsComponent,
+    ScrollhintComponent,
     
    
   

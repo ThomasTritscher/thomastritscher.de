@@ -4,53 +4,23 @@
     </div>
   </div>
 
-  <div (wheel)="changeBg(); firstWheelEvent()" class="bg-wrap">
+  <div (wheel)="changeBg();firstWheelEvent()" class="bg-wrap">
     <div id="bg-left" class="bg-left">
       <!-- <div class="content">
-      <div class="scroll-nav">
-        <ul>
-          <li>
-            <a href="">
-              <span>-</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>-</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>-</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>-</span>
-            </a>
-          </li>
-        </ul>
-        <p>SCROLLDOWN___________</p>
-      </div>
-      <div class="info">
-        <div class="headline">
-          <h2>portfolio 2021</h2>
-          <span>&lt;</span>
-          <h1>thomas
-            <br>
-            tritscher
-          </h1><span>&gt;</span>
+        <div class="info">
+          <div class="headline">
+            <h2>portfolio 2021</h2>
+            <span>&lt;</span>
+            <h1>thomas
+              <br>
+              tritscher
+            </h1><span>&gt;</span>
+          </div>
         </div>
-
-     
       </div> -->
-
-      <!-- </div> -->
     </div>
   </div>
-  <div class="scroll-hint">
 
-  </div>
   <!-- <nav class="h-nav">
       <ul>
         <li>
@@ -64,50 +34,8 @@
           <a href="">Contact</a>
         </li>
       </ul>
-    </nav> -->
-  <section id="s1" class="bg  active">
-    <span [style.background-color]="'red'">Hello</span>
+  </nav>  -->
 
-  </section>
-  <button (click)="secondWheelEvent()">Click</button>
-  <button (click)="thirdWheelEvent()">Click</button>
-
-  <section id="s2" class="bg"><span [style.background-color]="'green'">TWO</span>
-    <div id="img-w" class="img-wrapper">
-      <div id="img-w-bg" class="img-wrapper-bg">
-        <picture class="section-image-one">
-          <img src="./assets/img/img.jpg" alt="">
-        </picture>
-      </div>
-      <div id="img-w-bg2" class="img-wrapper-bg">
-        <picture class="section-image-one">
-          <img src="./assets/img/img3.jpg" alt="">
-        </picture>
-      </div>
-
-     
-    </div>
-    <div id="a-w" class="animation-wrapper">
-      <div id="c-l" class="curtain-left" style="transform: translate3d(-49%)">
-      </div>
-      <div id="c-r" class="curtain-right" style="transform: translate3d(49%)">
-      </div>
-    </div>
-
-  </section>
-  <section id="s3" class="bg"><span [style.background-color]="'blue'">THREE</span></section>
-  <section id="s4" class="bg"><span [style.background-color]="'brown'">FOUR</span>
-  <div class="content-wrapper">
-    <div class="form-wrap">
-      <div class="content-form">
-        <span class="p-wrap">
-          <label for="textme">Want wo work with
-            <span><b>me?</b></span>
-          </label>
-        </span>
-      </div>
-    </div>
-  </div>
-  </section>
- 
+  <app-sections></app-sections>
+  <div class="transition-bg"></div>
 </main>
