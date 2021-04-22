@@ -1,4 +1,4 @@
-$accentcolor       : #FF5722;
+
 
 menu {
   width: 100px;
@@ -13,7 +13,7 @@ menu {
   margin: 0;
 
   span {
-    color: $accentcolor ;
+    color: var(--accentcolor );
     margin: 0px;
     
   }
@@ -30,7 +30,7 @@ menu {
   width: 100%;
   top: 0;
   right: 0;
-  background-color: #272626;
+  background-color: var(--accentcolor);
   z-index: 11;
   display: grid;
   opacity: 0;
