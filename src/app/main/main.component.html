@@ -4,8 +4,8 @@
     </div>
   </div>
 
-  <div (wheel)="changeBg();firstWheelEvent()" class="bg-wrap">
-    <div id="bg-left" class="bg-left">
+  <div (wheel)="changeBg()" class="bg-wrap">
+    <div [ngStyle]="{'transform' : switch_bg}" class="bg-left">
       <!-- <div class="content">
         <div class="info">
           <div class="headline">

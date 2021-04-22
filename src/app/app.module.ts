@@ -11,6 +11,7 @@ import { OuterFrameComponent } from './outer-frame/outer-frame.component';
 import { MenuComponent } from './menu/menu.component';
 import { SectionsComponent } from './sections/sections.component';
 import { ScrollhintComponent } from './scrollhint/scrollhint.component';
+import { ProjectGridComponent } from './project-grid/project-grid.component';
 
 
 
@@ -25,6 +26,7 @@ import { ScrollhintComponent } from './scrollhint/scrollhint.component';
     MenuComponent,
     SectionsComponent,
     ScrollhintComponent,
+    ProjectGridComponent,
     
    
   

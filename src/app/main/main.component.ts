@@ -7,6 +7,8 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+
+  switch_bg = 'translate(' + -30 + '%)';
   
 
   constructor() { }
@@ -15,21 +17,10 @@ export class MainComponent implements OnInit {
   }
 
   changeBg() {
-    document.getElementById('bg-left')?.classList.add('transform-bg');
+    this.switch_bg = 'translate(' + -100 + '%)'
   
   }
-  firstWheelEvent() {
-    document.getElementById('s1')?.classList.remove('active');
-    document.getElementById('s2')?.classList.add('active');
-    document.getElementById('img-w')?.classList.add('o-active');
-    document.getElementById('img-w-bg')?.classList.add('o-active');
-    document.getElementById('a-w')?.classList.add('o-active');
-    document.getElementById('c-l')?.classList.add('c-active');
-    document.getElementById('c-r')?.classList.add('c-inactive')
-    
-  }
+ 
 
-
-  
 
 }
