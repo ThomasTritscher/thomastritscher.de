@@ -7,12 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionsComponent implements OnInit {
 
-  z_active = 11;
+  z_active = 9;
   z_inactiv = 0;
   o_active = 1;
   o_inactiv = 0;
-  transformToZero = 'translate(' + -49 + '%)';
-  transformTo100 = 'translate(' + +49 + '%)';
+  z_inactiv2 = 0;
+  o_inactiv2 = 0;
+  z_inactiv3 = 0;
+  o_inactiv3 = 0;
+  o_img_w = 0;
+  defaultTranslateMinus = 'translate(' + -49 + '%)';
+  defaultTranslatePlus = 'translate(' + +49 + '%)';
 
   constructor() { }
 
@@ -24,24 +29,24 @@ export class SectionsComponent implements OnInit {
     this.z_inactiv = 9;
     this.o_active = 0;
     this.o_inactiv = 1;
-    this.transformToZero = 'translate(' + -100 + '%)';
-    this.transformTo100 = 'translate(' + +100 + '%)';
+    this.o_img_w = 1;
+    this.defaultTranslateMinus = 'translate(' + -100 + '%)';
+    this.defaultTranslatePlus = 'translate(' + +100 + '%)';
   }
   
   
   secondWheelEvent() {
-    // document.getElementById('s2')?.classList.remove('active');
-    // document.getElementById('s3')?.classList.add('active');
-    // document.getElementById('img-w-bg2')?.classList.add('o-active');
-    // document.getElementById('img-w-bg')?.classList.remove('o-active');
-    // document.getElementById('c-l')?.classList.add('c-inactive');
-    // document.getElementById('c-r')?.classList.add('c-active')
-
-
+    this.o_inactiv = 0;
+    this.z_inactiv = 0;
+    this.z_inactiv2 = 9;
+    this.o_inactiv2 = 1;
+    this.defaultTranslateMinus = 'translate(' + +100 + '%)';
+    this.defaultTranslatePlus = 'translate(' + -100 + '%)';
   }
   thirdWheelEvent() {
-    // document.getElementById('s3')?.classList.remove('active');
-    // document.getElementById('s4')?.classList.add('active');
+    this.z_inactiv3 = 9;
+    this.z_inactiv2 = 0;
+    this.o_img_w = 0;
   }
 
 }

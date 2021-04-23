@@ -1,4 +1,4 @@
-<section  [ngStyle]="{'z-index' : z_active}" id="s1" class="bg  active">
+<section [ngStyle]="{'z-index' : z_active}" id="s1" class="bg  active">
   <span [style.background-color]="'red'">Hello</span>
 
 </section>
@@ -10,39 +10,40 @@
 
 <section [ngStyle]="{'z-index' : z_inactiv }" id="s2" class="bg">
   <span [style.background-color]="'green'">TWO</span>
-  <div [ngStyle]="{'opacity' : o_inactiv}"  class="img-wrapper">
-    <div [ngStyle]="{'opacity' : o_inactiv}"  class="img-wrapper-bg">
+  <div [ngStyle]="{'opacity' : o_img_w}" class="img-wrapper">
+    <div [ngStyle]="{'opacity' : o_inactiv}" class="img-wrapper-bg">
       <picture class="section-image-one">
         <app-project-grid></app-project-grid>
       </picture>
     </div>
-    <!-- <div id="img-w-bg2" class="img-wrapper-bg">
+    <div [ngStyle]="{'opacity' : o_inactiv2}" class="img-wrapper-bg">
       <picture class="section-image-one">
         <img src="./assets/img/img3.jpg" alt="">
       </picture>
-    </div> -->
-
-   
-  </div>
-  <div [ngStyle]="{'opacity' : o_inactiv}"  class="animation-wrapper">
-    <div [ngStyle]="{'transform' : transformToZero}"  class="curtain-left">
     </div>
-    <div [ngStyle]="{'transform' : transformTo100 }" class="curtain-right">
+
+
+  </div>
+  <div [ngStyle]="{'opacity' : o_inactiv}" class="animation-wrapper">
+    <div [ngStyle]="{'transform' : defaultTranslateMinus}" class="curtain-left">
+    </div>
+    <div [ngStyle]="{'transform' : defaultTranslatePlus }" class="curtain-right">
     </div>
   </div>
 
 </section>
-<section [ngStyle]="{'z-index' : '0' }" id="s3" class="bg"><span [style.background-color]="'blue'">THREE</span></section>
-<section [ngStyle]="{'z-index' : '0' }" id="s4" class="bg"><span [style.background-color]="'brown'">FOUR</span>
-<div class="content-wrapper">
-  <div class="form-wrap">
-    <div class="content-form">
-      <span class="p-wrap">
-        <label for="textme">Want wo work with
-          <span><b>me?</b></span>
-        </label>
-      </span>
+<section [ngStyle]="{'z-index' : z_inactiv2 }" class="bg"><span [style.background-color]="'blue'">THREE</span>
+</section>
+<section [ngStyle]="{'z-index' : z_inactiv3}" class="bg"><span [style.background-color]="'brown'">FOUR</span>
+  <div class="content-wrapper">
+    <div class="form-wrap">
+      <div class="content-form">
+        <span class="p-wrap">
+          <label for="textme">Want wo work with
+            <span><b>me?</b></span>
+          </label>
+        </span>
+      </div>
     </div>
   </div>
-</div>
 </section>
