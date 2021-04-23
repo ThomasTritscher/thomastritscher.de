@@ -1,4 +1,5 @@
 <div class="scroll-nav">
+  <div class="scroll-nav-box">
   <div  class="scroll-nav-block">
     <div [ngStyle]="{'transform' : default_length}" class="block-bg"></div>
   </div>
@@ -11,7 +12,8 @@
   <div class="scroll-nav-block">
     <div [ngStyle]="{'transform' : default_length}"  class="block-bg"></div>
   </div>
-  <span>SCROLLDOWN___________</span>
+</div>
+  <span>ScrollDown</span>
 </div>
 
 <button (click)="changeLength()" [style.z-index]="'99'">scroll</button>
