@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScrollhintComponent implements OnInit {
 
+  default_length = 'translate(' + -30 + '%)';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeLength() {
+    this.default_length = 'translate(' + -100 + '%)'
+  
   }
 
 }
