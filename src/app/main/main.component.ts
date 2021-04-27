@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class MainComponent implements OnInit {
 
 
-  switch_bg = 'translate(' + -30 + '%)';
+  default_bg = 'translate(' + -30 + '%)';
   
 
   constructor() { }
@@ -17,7 +17,7 @@ export class MainComponent implements OnInit {
   }
 
   changeBg() {
-    this.switch_bg = 'translate(' + -100 + '%)'
+    this.default_bg = 'translate(' + -100 + '%)'
   
   }
  
