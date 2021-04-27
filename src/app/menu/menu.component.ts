@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  rotate_default = 'rotate(-45deg)';
+  rotate_default = 'rotate3d(0deg)';
 
   constructor() { }
 
@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
   }
   overlayMenu() {
     document.getElementById('m-m-overlay')?.classList.add ('active');
-    this.rotate_default = 'rotate(-85deg)';
+    this.rotate_default = 'rotate3d(0deg)';
   }
 
 }
