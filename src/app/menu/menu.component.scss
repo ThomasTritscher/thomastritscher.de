@@ -1,5 +1,5 @@
 menu {
-  width    : 42px;
+  width    : 32px;
   position : fixed;
   right    : 0;
   top      : 0;
@@ -8,18 +8,6 @@ menu {
   display  : flex;
   flex-wrap: wrap;
   padding  : 30px;
-
-
-  // span {
-  //   color: var(--accentcolor);
-  //   margin: 0px;
-
-  // }
-  // h3 {
-  //   font-size: 2rem;
-  //   margin: 0;
-
-  // }
 }
 
 .dot {
