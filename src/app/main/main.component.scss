@@ -21,26 +21,6 @@
   transition      : transform .7s ease-in-out;
 
 
-
-  .content {
-    margin-left: 200px;
-    display    : flex;
-
-  }
-
-  h1 {
-    margin     : 0;
-    font-size  : 5em;
-    font-weight: 600;
-    color      :var(--primarytext);
-
-  }
-
-  h2 {
-    font-size: 2.5em;
-    color    : var(--secondarytext);
-  }
-
   ul {
     display: flex;
   }
