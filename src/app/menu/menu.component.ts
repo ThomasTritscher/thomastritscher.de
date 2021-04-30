@@ -7,15 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  rotate_default = 'rotate3d(0deg)';
+constructor() { }
 
-  constructor() { }
+defaultColor = '#585858';
+accentColor =  '#FF5722';
 
-  ngOnInit(): void {
-  }
-  overlayMenu() {
-    document.getElementById('m-m-overlay')?.classList.add ('active');
-    this.rotate_default = 'rotate3d(0deg)';
-  }
-
+ngOnInit(): void {
+}
+overlayMenu() {
+  document.getElementById('m-m-overlay')?.classList.add('active');
+  this.changeMenuButton();
+}
+changeMenuButton(){
+  this.defaultColor = '#FF5722';
+}
 }

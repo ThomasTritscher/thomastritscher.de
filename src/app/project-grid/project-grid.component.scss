@@ -6,11 +6,11 @@
  
   a{
     padding: 8px;
-
-    :hover{
-      color: grey;
+    &:hover {
+        color:yellow;
     }
   }
+ 
   
  
 
@@ -18,5 +18,6 @@
     width     : 100px;
     height    : 100px;
     object-fit: cover;
+    border-radius: 8px;
   }
 }

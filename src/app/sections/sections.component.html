@@ -1,21 +1,19 @@
 <section [ngStyle]="{'z-index' : z_active}" id="s1" class="bg  active">
   <span [style.background-color]="'red'">Hello</span>
-  <div class="content">
-    <div class="info">
-      <div class="headline">
-        <h2>portfolio 2021</h2>
-        <span>&lt;</span>
-        <h1>thomas
-          <br>
-          tritscher
-        </h1><span>&gt;</span>
-      </div>
-    </div>
-  </div>
+  <h1 class="s1-h1">
+    <span class="s1-h1-wrapper">
+      <span [ngStyle]="{'transform' : defaultFont}" class="s1-h1-wrapper-e s1-h1-pre-wrapper-e">portfolio 2021</span>
+    </span>
+    <span [ngStyle]="{'margin-top.px': '0', 'margin-right.px' : '0', 'margin-bottom': '-2.3%','margin-left.px': '-5px'}"
+      class="s1-h1-wrapper">
+      <span [ngStyle]="{'transform' : defaultFont}" class="s1-h1-wrapper-e">thomas</span>
+    </span>
+    <span class="s1-h1-wrapper">
+      <span [ngStyle]="{'transform' : defaultFont}" class="s1-h1-wrapper-e">tritscher</span>
+    </span>
+  </h1>
 </section>
 
-
-<button (click)="firstWheelEvent()">Wheel1</button>
 <button (click)="secondWheelEvent()">Wheel2</button>
 <button (click)="thirdWheelEvent()">Wheel3</button>
 

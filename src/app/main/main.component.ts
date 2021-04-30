@@ -11,21 +11,19 @@ export class MainComponent implements OnInit {
 
 
   default_bg = 'translate(' + -30 + '%)';
-  
+  direction = '';
 
   constructor(public test: TestService) { }
 
   ngOnInit(): void {
     window.addEventListener("wheel", () =>{
+    
       this.changeBg();
     });
   }
 
   changeBg() {
     this.default_bg = 'translate(' + -100 + '%)'
-  
   }
- 
-
 
 }

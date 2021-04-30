@@ -18,12 +18,14 @@ export class SectionsComponent implements OnInit {
   o_img_w = 0;
   defaultTranslateMinus = 'translate(' + -49 + '%)';
   defaultTranslatePlus = 'translate(' + +49 + '%)';
+  defaultFont = 'translate3d(0px, 0%, 0px)';
 
   constructor() { }
 
   ngOnInit(): void {
     window.addEventListener("wheel", () =>{
       this.firstWheelEvent();
+      this.translateFont();
     });
   }
 
@@ -50,6 +52,9 @@ export class SectionsComponent implements OnInit {
     this.z_inactiv3 = 9;
     this.z_inactiv2 = 0;
     this.o_img_w = 0;
+  }
+  translateFont() {
+    this.defaultFont = 'translate3d(0px, -145%, 0px)';
   }
 
 }
