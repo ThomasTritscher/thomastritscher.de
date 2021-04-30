@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { TestService } from '../services/test.service';
+
 
 @Component({
   selector: 'app-main',
@@ -11,7 +13,7 @@ export class MainComponent implements OnInit {
   default_bg = 'translate(' + -30 + '%)';
   
 
-  constructor() { }
+  constructor(public test: TestService) { }
 
   ngOnInit(): void {
   }
