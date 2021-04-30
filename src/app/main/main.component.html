@@ -1,11 +1,10 @@
 <main>
-  <button (click)="test.firstWheelEvent()" [ngStyle]="{'width.px' : '200'}">Click</button>
   <div>
     <div class="outer-frame">
     </div>
   </div>
 
-  <div (wheel)="changeBg()" class="bg-wrap">
+  <div class="bg-wrap">
     <div [ngStyle]="{'transform' : default_bg}" class="bg-left">
     </div>
   </div>

@@ -27,14 +27,14 @@
   width           : 100%;
   height          : 100%;
   background-color: var(--accentcolor);
-  transition      : transform .2s ease;
+  transition      : transform .3s ease;
 }
 .scroll-nav-scripture{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 24px;
-  transition      : transform .2s ease;
+  transition      : transform .3s ease;
 
   span {
     font-size     : 1rem;

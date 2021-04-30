@@ -22,6 +22,9 @@ export class SectionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener("wheel", () =>{
+      this.firstWheelEvent();
+    });
   }
 
   firstWheelEvent() {

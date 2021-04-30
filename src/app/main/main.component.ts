@@ -16,6 +16,9 @@ export class MainComponent implements OnInit {
   constructor(public test: TestService) { }
 
   ngOnInit(): void {
+    window.addEventListener("wheel", () =>{
+      this.changeBg();
+    });
   }
 
   changeBg() {

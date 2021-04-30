@@ -16,6 +16,9 @@ export class ScrollhintComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener("wheel", () =>{
+      this.changeLength();
+    });
   }
 
   changeLength() {
