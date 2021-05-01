@@ -1,0 +1,22 @@
+.h-nav {
+  margin: 2% 0 0 12.5%;
+  position: fixed;
+  top: 55%;
+  z-index: 8;
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0
+  }
+  li{
+    float: left;
+    padding: 0 0 30px;
+    overflow: hidden;
+    min-width: 130px;
+  }
+
+}
+.h-nav-wrapper{
+  transition: all 1s ease;
+}

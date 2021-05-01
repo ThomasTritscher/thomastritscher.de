@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { SectionsComponent } from './sections/sections.component';
 import { ScrollhintComponent } from './scrollhint/scrollhint.component';
 import { ProjectGridComponent } from './project-grid/project-grid.component';
+import { HNavComponent } from './h-nav/h-nav.component';
 
 
 
@@ -27,6 +28,7 @@ import { ProjectGridComponent } from './project-grid/project-grid.component';
     SectionsComponent,
     ScrollhintComponent,
     ProjectGridComponent,
+    HNavComponent,
     
    
   
