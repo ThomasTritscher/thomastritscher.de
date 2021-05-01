@@ -1,22 +1,55 @@
 .h-nav {
-  margin: 2% 0 0 12.5%;
+  margin  : 2% 0 0 12.5%;
   position: fixed;
-  top: 55%;
-  z-index: 8;
+  top     : 55%;
+  z-index : 8;
 
-  ul{
+  ul {
     list-style: none;
-    padding: 0;
-    margin: 0
+    padding   : 0;
+    margin    : 0
   }
-  li{
-    float: left;
-    padding: 0 0 30px;
-    overflow: hidden;
+
+  li {
+    float    : left;
+    padding  : 0 0 30px;
+    overflow : hidden;
     min-width: 130px;
   }
 
 }
-.h-nav-wrapper{
+
+.h-nav-wrapper {
   transition: all 1s ease;
+}
+
+.navpoint-switch {
+  height  : 1.4vw;
+  display : block;
+  overflow: hidden;
+
+  a{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #585858;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+
+.navpoint-switch-wrapper {
+  display   : block;
+  transform : translateZ(0);
+  transition: all .8s cubic-bezier(.87, 0, .3, 1.04);
+
+  a{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #585858;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+  }
+  
 }
