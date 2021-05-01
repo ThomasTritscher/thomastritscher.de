@@ -1,3 +1,4 @@
+<!-- Section1 Home -->
 <section [ngStyle]="{'z-index' : z_active}" id="s1" class="bg  active">
   <span [style.background-color]="'red'">Hello</span>
   <h1 class="s1-h1">
@@ -17,6 +18,8 @@
 <button (click)="secondWheelEvent()">Wheel2</button>
 <button (click)="thirdWheelEvent()">Wheel3</button>
 
+
+<!-- Section2 Projects -->
 <section [ngStyle]="{'z-index' : z_inactiv }" id="s2" class="bg">
   <span [style.background-color]="'green'">TWO</span>
   <div [ngStyle]="{'opacity' : o_img_w}" class="img-wrapper">
@@ -30,8 +33,6 @@
         <img src="./assets/img/img3.jpg" alt="">
       </picture>
     </div>
-
-
   </div>
   <div [ngStyle]="{'opacity' : o_inactiv}" class="animation-wrapper">
     <div [ngStyle]="{'transform' : defaultTranslateMinus}" class="curtain-left">
@@ -39,16 +40,106 @@
     <div [ngStyle]="{'transform' : defaultTranslatePlus }" class="curtain-right">
     </div>
   </div>
+  <div class="content-wrapper">
+    <div class="p-wrap">
+      <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <h2>I`m working as Front-End Developer</h2>
+        <p>at DA, a digital</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+      <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>academie based in munich. Since</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>early 2021 beneath my main occupation as</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>Developer I am challenging myself by improving</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>my frontend progrmaming skills.</p>
+      </div>
+    </div>
+    <br>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>Further this portfolio is as snapshot of my current</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>skill level, concerning usability, performance and</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>code quality</p>
+      </div>
+    </div>
+  </div>
 
 </section>
+
+<!-- Section3 Journey -->
 <section [ngStyle]="{'z-index' : z_inactiv2 }" class="bg"><span [style.background-color]="'blue'">THREE</span>
-</section>
-<section [ngStyle]="{'z-index' : z_inactiv3}" class="bg"><span [style.background-color]="'brown'">FOUR</span>
   <div class="content-wrapper">
+    <div class="p-wrap">
+      <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <h2>I code and something</h2>
+        <p>since I can push a button.</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+      <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>Progmramming is my passion, my balance.As contrast to my</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>profession as a Developer, programming is freedom for me.</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>No accountabilty to customer, no conventions</p>
+      </div>
+    </div>
+    <br>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>Since 2021 I am constanly working on my first</p>
+      </div>
+    </div>
+    <br>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>exhibiton with more than 30 mixed media works</p>
+      </div>
+    </div>
+    <div class="p-wrap">
+       <div [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" class="content-a">
+        <p>in different styles and formats</p>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- Section4 Person -->
+<section [ngStyle]="{'z-index' : z_inactiv3}" class="bg"><span [style.background-color]="'brown'">FOUR</span>
+  <div class="content-wrapper content-wrapper-contact">
     <div class="form-wrap">
       <div class="content-form">
         <span class="p-wrap">
-          <label for="textme">Want wo work with
+          <label [ngStyle]="{'transform' : 'translate3d(0px, 0%, 0px)'}" for="textme">Want to work with
             <span><b>me?</b></span>
           </label>
         </span>

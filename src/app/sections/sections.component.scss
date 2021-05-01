@@ -100,10 +100,46 @@
   display   : block;
   transition: all 1s ease;
 }
+
 .s1-h1-pre-wrapper-e {
-  font-size: 1.6vw;
-  margin-bottom: -.1%;
-  display: block;
+  font-size     : 1.6vw;
+  margin-bottom : -.1%;
+  display       : block;
   letter-spacing: -.08vw;
   color         : var(--secondarytext);
 }
+
+.content-wrapper {
+  margin: 14.8vh 0 0 12.5vw;
+  width : 34vw;
+
+  .p-wrap {
+    overflow: hidden;
+    display : block;
+    padding : 5px 0;
+  }
+  .content-a {
+    display: block;
+    transition: all 1s ease;
+    transform: translate3d(0,-145%,0);
+  }
+ 
+  h2{
+    font-weight: 500;
+    float: left;
+  }
+  p{
+    margin: 0;
+    font-size: 1.3vw;
+    font-weight: 300
+  }
+}
+.content-wrapper-contact{
+  margin: 14.8vh auto 0 12vw;
+  width: 60vw;
+ 
+  label{
+    font-size: 6vw;
+  }
+}
+
