@@ -1,17 +1,21 @@
-.bg {
-  position      : fixed;
-  height        : 100%;
-  max-width     : 100%;
-  width         : 100%;
-  top           : 0;
-  left          : 0;
-  right         : 0;
-  bottom        : 0;
-  padding       : 0;
-  pointer-events: none;
-
+section {
+  max-width: 60vw; 
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
+.h {
+  position: fixed;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  pointer-events: none;
+}
 
 .img-wrapper {
   width     : 35vw;
@@ -32,9 +36,20 @@
 }
 
 .section-image-one {
-  width     : 60%;
+  width     : 80%;
   margin    : 0 auto;
   align-self: center;
+
+
+  img {
+    width: 100%;
+  }
+}
+.section-image-two {
+  width     : 100%;
+  margin    : 0 auto;
+  align-self: center;
+  position: absolute;
 
 
   img {

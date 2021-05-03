@@ -1,15 +1,16 @@
 <main>
   <div>
-    <div class="outer-frame">
-    </div>
+    <app-outer-frame></app-outer-frame>
   </div>
-
+  <section class="svg-wrap">
+    <img src="" alt="">
+  </section>
   <div class="bg-wrap">
     <div [ngStyle]="{'transform' : default_bg}" class="bg-left">
     </div>
   </div>
-  <app-h-nav></app-h-nav>
   <app-scrollhint></app-scrollhint>
+  <app-h-nav></app-h-nav>
   <app-sections></app-sections>
   <div class="transition-bg"></div>
 </main>

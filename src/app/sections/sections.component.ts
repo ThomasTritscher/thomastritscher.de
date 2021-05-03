@@ -18,7 +18,10 @@ export class SectionsComponent implements OnInit {
   o_img_w = 0;
   defaultTranslateMinus = 'translate(' + -49 + '%)';
   defaultTranslatePlus = 'translate(' + +49 + '%)';
-  defaultFont = 'translate3d(0px, 0%, 0px)';
+  firstText= 'translate3d(0px, 0%, 0px)';
+  secondText = 'translate3d(0px, -145%, 0px)';
+  thirdText = 'translate3d(0px, -145%, 0px)';
+  fourthText = 'translate3d(0px, -145%, 0px)';
 
   constructor() { }
 
@@ -37,6 +40,7 @@ export class SectionsComponent implements OnInit {
     this.o_img_w = 1;
     this.defaultTranslateMinus = 'translate(' + -100 + '%)';
     this.defaultTranslatePlus = 'translate(' + +100 + '%)';
+    this.secondText = 'translate3d(0px, 0%, 0px)';
   }
   
   
@@ -47,14 +51,18 @@ export class SectionsComponent implements OnInit {
     this.o_inactiv2 = 1;
     this.defaultTranslateMinus = 'translate(' + +100 + '%)';
     this.defaultTranslatePlus = 'translate(' + -100 + '%)';
+    this.secondText = 'translate3d(0px, -145%, 0px)';
+    this.thirdText = 'translate3d(0px, 0%, 0px)';
   }
   thirdWheelEvent() {
     this.z_inactiv3 = 9;
     this.z_inactiv2 = 0;
     this.o_img_w = 0;
+    this.thirdText = 'translate3d(0px, -145%, 0px)';
+    this.fourthText = 'translate3d(0px, 0%, 0px)';
   }
   translateFont() {
-    this.defaultFont = 'translate3d(0px, -145%, 0px)';
+    this.firstText = 'translate3d(0px, -145%, 0px)';
   }
 
 }
