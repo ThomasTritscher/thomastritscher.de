@@ -5,18 +5,18 @@
 <section [ngStyle]="{'z-index' : z_active}" class="h  active">
   <span [style.background-color]="'red'">Hello</span>
   <div [ngStyle]="{'opacity' : o_img_w}" class="img-wrapper">
-    <div [ngStyle]="{'opacity' : o_inactiv}" class="img-wrapper-bg">
+    <div [ngStyle]="{'opacity' : o_inactive}" class="img-wrapper-bg">
       <picture class="section-image-one">
         <app-project-grid></app-project-grid>
       </picture>
     </div>
-    <div [ngStyle]="{'opacity' : o_inactiv2}" class="img-wrapper-bg">
+    <div [ngStyle]="{'opacity' : o_inactive2}" class="img-wrapper-bg">
       <picture class="section-image-two">
         <img src="./assets/img/img.jpg" alt="">
       </picture>
     </div>
   </div>
-  <div [ngStyle]="{'opacity' : o_inactiv}" class="animation-wrapper">
+  <div [ngStyle]="{'opacity' : o_inactive}" class="animation-wrapper">
     <div [ngStyle]="{'transform' : defaultTranslateMinus}" class="curtain-left">
     </div>
     <div [ngStyle]="{'transform' : defaultTranslatePlus }" class="curtain-right">
@@ -26,7 +26,7 @@
 
 <!-- Section2 -->
 
-<section class="h" [ngStyle]="{'z-index' : z_inactiv}">
+<section class="h" [ngStyle]="{'z-index' : z_inactive}">
   <h1 class="s1-h1">
     <span class="s1-h1-wrapper">
       <span [ngStyle]="{'transform' : firstText}" class="s1-h1-wrapper-e s1-h1-pre-wrapper-e">portfolio 2021</span>
@@ -43,7 +43,7 @@
 
 
 <!-- Section3 -->
-<section [ngStyle]="{'z-index' : z_inactiv }" class="h test">
+<section [ngStyle]="{'z-index' : z_inactive }" class="h test">
   <span [style.background-color]="'green'">TWO</span>
 
 
@@ -95,7 +95,7 @@
 </section>
 
 <!-- Section4 -->
-<section [ngStyle]="{'z-index' : z_inactiv2 }" class="h test"><span [style.background-color]="'blue'">THREE</span>
+<section [ngStyle]="{'z-index' : z_inactive2 }" class="h test"><span [style.background-color]="'blue'">THREE</span>
   <div class="content-wrapper">
     <div class="p-wrap">
       <div [ngStyle]="{'transform' : thirdText}" class="content-a">
@@ -141,7 +141,7 @@
 </section>
 
 <!-- Section5 -->
-<section [ngStyle]="{'z-index' : z_inactiv3}" class="h test"><span [style.background-color]="'brown'">FOUR</span>
+<section [ngStyle]="{'z-index' : z_inactive3}" class="h test"><span [style.background-color]="'brown'">FOUR</span>
   <div class="content-wrapper content-wrapper-contact">
     <div class="form-wrap">
       <div class="content-form">
