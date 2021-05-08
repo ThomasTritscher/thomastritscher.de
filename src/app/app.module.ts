@@ -8,7 +8,6 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { MainComponent } from './main/main.component';
 import { OuterFrameComponent } from './outer-frame/outer-frame.component';
-import { MenuComponent } from './menu/menu.component';
 import { SectionsComponent } from './sections/sections.component';
 import { ScrollhintComponent } from './scrollhint/scrollhint.component';
 import { ProjectGridComponent } from './project-grid/project-grid.component';
@@ -24,7 +23,6 @@ import { HNavComponent } from './h-nav/h-nav.component';
     DataProtectionComponent,
     MainComponent,
     OuterFrameComponent,
-    MenuComponent,
     SectionsComponent,
     ScrollhintComponent,
     ProjectGridComponent,

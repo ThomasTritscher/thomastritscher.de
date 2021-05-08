@@ -1,14 +1,60 @@
 <a href="">
 <img class="h-logo" src="/assets/icons/Logo-gold.png" alt="">
+<!-- <img *ngIf="darkMode" class="h-logo" src="/assets/icons/Logo-white.png" alt=""> -->
 </a>
-<span class="h-span">Front End Developer</span>
-<app-menu></app-menu>
-<nav class="sm">
+<span [ngStyle]="{'color': spanColor, 'zIndex' : z_inactive}" class="h-span">Front End Developer</span>
+<nav [class.darkLinks]="darkMode" class="sm">
 <ul>
 <li>Facebook</li>
 <li>Twitter</li>
 <li>Github</li>
-
 </ul>
-
 </nav>
+<menu *ngIf="!darkMode" (click)="overlayMenu()">
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : accentColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+ </menu>
+ <menu *ngIf="darkMode" (click)="closeMenu()">
+  <span [ngStyle]="{'background' : accentColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : accentColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : accentColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : accentColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
+  <span [ngStyle]="{'background' : accentColor}" class="dot"></span>
+ </menu>
+ <div id="m-m-overlay" class="main-menu">
+ <ul>
+   <li>
+     <span>01</span>
+     <a href="">cases & projects</a>
+   </li>
+   <li>
+     <span>02</span>
+     <a href="">artwork & studies</a>
+   </li>
+   <li>
+     <span>03</span>
+     <a href="">person</a>
+   </li>
+   <li>
+     <span>04</span>
+     <a href="">say hello!</a>
+   </li>
+ </ul>
+ </div>
+ <div [ngStyle]="{'opacity' : o_inactiv}"class="legals">
+   <ul>
+     <li>imprint</li>
+     <li>data protection</li>
+   </ul>
+ </div>
