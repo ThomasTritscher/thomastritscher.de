@@ -6,7 +6,7 @@
     <img src="" alt="">
   </section>
   <div class="bg-wrap">
-    <div [ngStyle]="{'transform' : default_bg}" class="bg-left">
+    <div  [ngStyle]="{ 'transform': (transform ? 'translate(' + -30 + '%)' : 'translate(' + -100 + '%)') }" class="bg-left">
     </div>
   </div>
   <app-scrollhint></app-scrollhint>

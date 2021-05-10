@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayerChangeService } from '../services/layer-change.service';
 
 @Component({
   selector: 'app-sections',
@@ -22,7 +23,10 @@ export class SectionsComponent implements OnInit {
   secondText = 'translate3d(0px, -250%, 0px)';
   thirdText = 'translate3d(0px, -250%, 0px)';
   fourthText = 'translate3d(0px, -250%, 0px)';
-  constructor() { }
+  z_indexChange = 0;
+
+
+  constructor(public layer: LayerChangeService) { }
 
   ngOnInit(): void {
     window.addEventListener("wheel", () =>{

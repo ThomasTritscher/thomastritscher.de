@@ -1,6 +1,8 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit, HostListener } from '@angular/core';
 import { element } from 'protractor';
-import { TestService } from '../services/test.service';
+
+
 
 
 @Component({
@@ -11,17 +13,20 @@ import { TestService } from '../services/test.service';
 export class MainComponent implements OnInit {
 
 
-  default_bg = 'translate(' + -30 + '%)';
+  // default_bg = 'translate(' + -30 + '%)';
+  transform = true;
   
 
-  constructor(public test: TestService) { }
+  constructor() { }
 
   ngOnInit(): void {
     window.addEventListener("wheel", (event: any) =>{
-      const showElem = event['path'][0];
+      console.log("wheel" ,  event)
+      const showElem = event['path'][1];
       this.initZIndex();
       this.setZIndex(showElem, '9');
       this.changeBg();
+      
     });
   }
 
@@ -37,7 +42,8 @@ export class MainComponent implements OnInit {
   }
 
   changeBg() {
-    this.default_bg = 'translate(' + -100 + '%)'
+    // this.default_bg = 'translate(' + -100 + '%)'
+    this.transform = false;
   }
 
 }

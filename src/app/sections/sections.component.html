@@ -1,5 +1,5 @@
 <button (click)="secondWheelEvent()">Wheel2</button>
-<button (click)="thirdWheelEvent()">Wheel3</button>
+<button (click)="thirdWheelEvent(); layer.changeLayer(z_indexChange)">Wheel3</button>
 
 <!-- Section1 -->
 <section [ngStyle]="{'z-index' : z_active}" class="h  active">
@@ -43,7 +43,7 @@
 
 
 <!-- Section3 -->
-<section [ngStyle]="{'z-index' : z_inactive }" class="h test">
+<section [ngStyle]="{'z-index' : z_indexChange }" class="h test">
   <span [style.background-color]="'green'">TWO</span>
 
 

@@ -4,11 +4,15 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TestService {
+  transform!: string;
+  
+  
 
   constructor() { }
 
- 
-  myFunc(param: any) {
-    console.log(param);
+  public myFunc(transform: any) {
+    console.log(transform);
+    this.transform = 'translate(' + -100 + '%)';
+    
   }
 }
