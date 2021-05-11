@@ -19,7 +19,6 @@ export class SectionsComponent implements OnInit {
     window.addEventListener("wheel", () =>{
       this.layer.firstWheelEvent();
       this.layer.translateFont();
-      this.layer.changeLength();
     });
   }
 

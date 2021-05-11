@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayerChangeService } from '../services/layer-change.service';
 
 @Component({
   selector: 'app-h-nav',
@@ -7,15 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(public layer: LayerChangeService) { }
 
-  public nav_point_change = 'translate3d(0px, 0%, 0px)';
 
   ngOnInit(): void {
   }
 
-  changeNav() {
-    this.nav_point_change = 'translate3d(0px, -175%, 0px)';
-  }
+  
 
 }
