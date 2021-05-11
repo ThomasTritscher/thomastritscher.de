@@ -1,6 +1,7 @@
 import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit, HostListener } from '@angular/core';
 import { element } from 'protractor';
+import { TransformBGService } from '../services/transform-bg.service';
 
 
 
@@ -13,37 +14,32 @@ import { element } from 'protractor';
 export class MainComponent implements OnInit {
 
 
-  // default_bg = 'translate(' + -30 + '%)';
-  transform = true;
+  
   
 
-  constructor() { }
+  constructor(public transformBg: TransformBGService) { }
 
   ngOnInit(): void {
     window.addEventListener("wheel", (event: any) =>{
       console.log("wheel" ,  event)
-      const showElem = event['path'][1];
-      this.initZIndex();
-      this.setZIndex(showElem, '9');
-      this.changeBg();
-      
+      // const showElem = event['path'][1];
+      // this.initZIndex();
+      // this.setZIndex(showElem, '9');
+      this.transformBg.switchBgToZero();
     });
   }
 
-  initZIndex(){
-    const elements = document.getElementsByClassName("test");
-    Array.from(elements).forEach( (element: any) =>{
-      element.style.zIndex = "0";
-    });
-  }
+  // initZIndex(){
+  //   const elements = document.getElementsByClassName("test");
+  //   Array.from(elements).forEach( (element: any) =>{
+  //     element.style.zIndex = "0";
+  //   });
+  // }
 
-  setZIndex( elem: any, index: any){
-    elem.style.zIndex = index;
-  }
+  // setZIndex( elem: any, index: any){
+  //   elem.style.zIndex = index;
+  // }
 
-  changeBg() {
-    // this.default_bg = 'translate(' + -100 + '%)'
-    this.transform = false;
-  }
+ 
 
 }

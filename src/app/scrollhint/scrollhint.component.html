@@ -1,25 +1,20 @@
 <div class="scroll-nav">
   <div class="scroll-nav-box">
-    <div class="scroll-nav-block">
-      <div [ngStyle]="{'transform' : default_length}" class="block-bg"></div>
+    <div class="scroll-nav-bar">
+      <div [ngStyle]="{'transform' : layer.default_length}" class="bar-bg"></div>
     </div>
-    <div class="scroll-nav-block">
-      <div [ngStyle]="{'transform' : default_length1}" class="block-bg"></div>
+    <div class="scroll-nav-bar">
+      <div [ngStyle]="{'transform' : layer.default_length1}" class="bar-bg"></div>
     </div>
-    <div class="scroll-nav-block">
-      <div [ngStyle]="{'transform' : default_length2}" class="block-bg"></div>
+    <div class="scroll-nav-bar">
+      <div [ngStyle]="{'transform' : layer.default_length2}" class="bar-bg"></div>
     </div>
-    <div class="scroll-nav-block">
-      <div [ngStyle]="{'transform' : default_length3}" class="block-bg"></div>
+    <div class="scroll-nav-bar">
+      <div [ngStyle]="{'transform' : layer.default_length3}" class="bar-bg"></div>
     </div>
   </div>
-  <div [ngStyle]="{'transform' : runout}" class="scroll-nav-scripture">
+  <div [ngStyle]="{'transform' : layer.runout}" class="scroll-nav-scripture">
     <span>ScrollDown</span>
     <div class="scroll-vertical-line" [ngStyle]="{}"></div>
   </div>
 </div>
-
-
-<button (click)="wheelEvent()" [style.z-index]="'99'">scroll2</button>
-<button (click)="wheelEventtwo()" [style.z-index]="'99'">scroll3</button>
-<button (click)="wheelEventthree()" [style.z-index]="'99'">scroll4</button>
