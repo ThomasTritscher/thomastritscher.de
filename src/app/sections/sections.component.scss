@@ -1,19 +1,19 @@
 section {
-  max-width: 60vw; 
-  margin: 0 auto;
-  padding: 0 30px;
+  max-width: 60vw;
+  margin   : 0 auto;
+  padding  : 0 30px;
 }
 
 .h {
-  position: fixed;
-  height: 100%;
-  max-width: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0;
+  position      : fixed;
+  height        : 100%;
+  max-width     : 100%;
+  width         : 100%;
+  top           : 0;
+  left          : 0;
+  right         : 0;
+  bottom        : 0;
+  padding       : 0;
   pointer-events: none;
 }
 
@@ -36,20 +36,18 @@ section {
 }
 
 .section-image-one {
-  width     : 80%;
+  max-width : 680px;
+  min-width : 200px;
   margin    : 0 auto;
   align-self: center;
 
-
-  img {
-    width: 100%;
-  }
 }
+
 .section-image-two {
   width     : 100%;
   margin    : 0 auto;
   align-self: center;
-  position: absolute;
+  position  : absolute;
 
 
   img {
@@ -133,28 +131,30 @@ section {
     display : block;
     padding : 5px 0;
   }
+
   .content-a {
-    display: block;
+    display   : block;
     transition: all 1s ease;
-    transform: translate3d(0,-145%,0);
+    transform : translate3d(0, -145%, 0);
   }
- 
-  h2{
+
+  h2 {
     font-weight: 500;
-    float: left;
+    float      : left;
   }
-  p{
-    margin: 0;
-    font-size: 1.3vw;
+
+  p {
+    margin     : 0;
+    font-size  : 1.3vw;
     font-weight: 300
   }
 }
-.content-wrapper-contact{
+
+.content-wrapper-contact {
   margin: 14.8vh auto 0 12vw;
-  width: 60vw;
- 
-  label{
+  width : 60vw;
+
+  label {
     font-size: 6vw;
   }
 }
-
