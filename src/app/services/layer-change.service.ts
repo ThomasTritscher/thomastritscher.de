@@ -48,6 +48,7 @@ export class LayerChangeService {
     this.changeLength();
     this.scrollSpan();
     this.changeNav();
+    this.translateFont();
   }
 
   secondWheelEvent() {
@@ -122,14 +123,6 @@ export class LayerChangeService {
     this.default_length2 = 'translate(' + 0 + '%)';
     this.default_length3 = 'translate(' + -30 + '%)';
   }
-
-
-
-
-
-
-
-
 
   translateFont() {
     this.firstText = 'translate3d(0px, -250%, 0px)';

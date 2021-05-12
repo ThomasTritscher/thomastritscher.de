@@ -1,5 +1,3 @@
-<button (click)="layer.secondWheelEvent()">Wheel2</button>
-<button (click)="layer.thirdWheelEvent()">Wheel3</button>
 
 <!-- Section1 -->
 <section [ngStyle]="{'z-index' : layer.z_active}" class="h  active">
@@ -43,10 +41,8 @@
 
 
 <!-- Section3 -->
-<section [ngStyle]="{'z-index' : layer.z_inactive2 }" class="h test">
-  <span [style.background-color]="'green'">TWO</span>
-
-
+<section [ngStyle]="{'z-index' : layer.z_inactive2 }" class="h">
+  <span [style.background-color]="'green'">Three</span>
   <div class="content-wrapper">
     <div class="p-wrap">
       <div [ngStyle]="{'transform' : layer.secondText}" class="content-a">
@@ -95,7 +91,7 @@
 </section>
 
 <!-- Section4 -->
-<section [ngStyle]="{'z-index' : layer.z_inactive2 }" class="h test"><span [style.background-color]="'blue'">THREE</span>
+<section  [ngStyle]="{'z-index' : layer.z_inactive2 }" class="h"><span [style.background-color]="'blue'">Four</span>
   <div class="content-wrapper">
     <div class="p-wrap">
       <div [ngStyle]="{'transform' : layer.thirdText}" class="content-a">
@@ -141,7 +137,7 @@
 </section>
 
 <!-- Section5 -->
-<section [ngStyle]="{'z-index' : layer.z_inactive3}" class="h test"><span [style.background-color]="'brown'">FOUR</span>
+<section  [ngStyle]="{'z-index' : layer.z_inactive3}" class="h "><span [style.background-color]="'brown'">Five</span>
   <div class="content-wrapper content-wrapper-contact">
     <div class="form-wrap">
       <div class="content-form">

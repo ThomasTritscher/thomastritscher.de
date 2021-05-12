@@ -8,18 +8,18 @@ import { LayerChangeService } from '../services/layer-change.service';
 })
 export class SectionsComponent implements OnInit {
 
-  
-
-  
-
 
   constructor(public layer: LayerChangeService) { }
 
   ngOnInit(): void {
-    window.addEventListener("wheel", () =>{
-      this.layer.firstWheelEvent();
-      this.layer.translateFont();
-    });
+    
   }
+  elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  animate(event: any, element: HTMLElement) {
+    console.log(event, element.innerHTML);
+    element.style.background = 'red';
+  }
+  
 
 }
