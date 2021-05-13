@@ -35,7 +35,8 @@ export class LayerChangeService {
   public runout = 'translateY(' + 0 + '%)';
 
   // var for h-nav
-  public nav_point_change = 'translate3d(0px, 0%, 0px)';
+  public navPoint_text = 'translate3d(0px, 0%, 0px)';
+  public navPoint_text1 = 'translate3d(0px, 0%, 0px)';
 
   constructor() { }
 
@@ -57,12 +58,14 @@ export class LayerChangeService {
     this.translateCurtainOut();
     this.translateText2();
     this.translateScrollhintBar2();
+    this.changeNav2();
   }
   thirdWheelEvent() {
     this.switchLayer3ZIndex();
     this.switchLayer3Opacity();
     this.translateText3();
     this.translateScrollhintBar3();
+    this.changeNav3(); 
   }
 
   //first wheel event
@@ -136,7 +139,14 @@ export class LayerChangeService {
     this.runout = 'translateY(' + 100 + '%)';
   }
   changeNav() {
-    this.nav_point_change = 'translate3d(0px, -175%, 0px)';
+    this.navPoint_text = 'translate3d(0px, -25%, 0px)';
+    this.navPoint_text1 = 'translate3d(0px, -175%, 0px)';
+  }
+  changeNav2() {
+    this.navPoint_text = 'translate3d(0px, -50%, 0px)';
+  }
+  changeNav3() {
+    this.navPoint_text = 'translate3d(0px, -75%, 0px)';
   }
 
 
