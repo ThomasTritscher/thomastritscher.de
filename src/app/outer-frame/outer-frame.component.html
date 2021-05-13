@@ -4,9 +4,15 @@
 <span [ngStyle]="{'color': spanColor, 'zIndex' : z_inactive}" class="h-span">Front End Developer</span>
 <nav [class.darkLinks]="darkMode" class="sm">
   <ul>
-    <li>Facebook</li>
-    <li>Twitter</li>
-    <li>Github</li>
+    <li>
+      <a target="_blank" href="">Facebook</a>
+    </li>
+    <li>
+      <a target="_blank" href="">Twitter</a>        
+    </li>
+    <li>
+      <a target="_blank" href="">Github</a>        
+    </li>
   </ul>
 </nav>
 <menu *ngIf="!darkMode" (click)="overlayMenu()">

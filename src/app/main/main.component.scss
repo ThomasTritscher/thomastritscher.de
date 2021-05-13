@@ -9,7 +9,7 @@ section {
 }
 .svg-wrap{
   width: 50vw;
-  height: 100vh;
+  height: 90vh;
   position: absolute;
   display: block;
   right: 0;
@@ -22,8 +22,10 @@ section {
   img {
     width: 50%;
     position: relative;
-    top: -10%;
+    top: 10%;
+    left: 20%;
     z-index: -1;
+    border-radius: 12px;
   }
 }
 

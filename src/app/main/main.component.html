@@ -2,8 +2,8 @@
   <div>
     <app-outer-frame></app-outer-frame>
   </div>
-  <section class="svg-wrap">
-    <!-- <img src="/assets/img/img.jpg" alt=""> -->
+  <section [ngStyle]="{'opacity' : layer.img_opacity}" class="svg-wrap">
+    <img src="/assets/img/face2.jpg" alt="">
   </section>
   <div class="bg-wrap">
     <div  [ngStyle]="{ 'transform': transformBg.valueBg }" class="bg-left">

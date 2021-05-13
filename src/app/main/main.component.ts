@@ -18,7 +18,7 @@ export class MainComponent implements OnInit {
   // timeBetweenWheels = 1000;
   counter = 0;
   startWheel!: number;
-  
+  img_opacity = 1;
   
 
   constructor(public transformBg: TransformBGService , public layer: LayerChangeService) { }

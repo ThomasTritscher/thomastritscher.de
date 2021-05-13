@@ -38,6 +38,8 @@ export class LayerChangeService {
   public navPoint_text = 'translate3d(0px, 0%, 0px)';
   public navPoint_text1 = 'translate3d(0px, 0%, 0px)';
 
+  public img_opacity = 1;
+
   constructor() { }
 
   firstWheelEvent() {
@@ -50,6 +52,7 @@ export class LayerChangeService {
     this.scrollSpan();
     this.changeNav();
     this.translateFont();
+    this.changeHImg();
   }
 
   secondWheelEvent() {
@@ -147,6 +150,9 @@ export class LayerChangeService {
   }
   changeNav3() {
     this.navPoint_text = 'translate3d(0px, -75%, 0px)';
+  }
+  changeHImg(){
+    this. img_opacity = 0;
   }
 
 
