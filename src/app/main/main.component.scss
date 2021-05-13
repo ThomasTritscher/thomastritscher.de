@@ -6,8 +6,13 @@ section {
   max-width: 60vw;
   margin: 0 auto;
   padding: 0 30px;
+  @media only screen and (max-width: 770px) {
+    max-width: 100%;
+    margin   : 0 auto;
+    padding  : 0 70px;
+  }
 }
-.svg-wrap{
+.svg-wrap {
   width: 50vw;
   height: 90vh;
   position: absolute;
@@ -26,7 +31,13 @@ section {
     left: 20%;
     z-index: -1;
     border-radius: 12px;
+
   }
+
+  @media only screen and (max-width: 770px){
+    display: none;
+  }
+
 }
 
 .bg-wrap {
@@ -45,6 +56,10 @@ section {
   position        : absolute;
   opacity         : 0.6;
   transition      : transform .7s ease-in-out;
+
+  @media only screen and (max-width: 770px) {
+    opacity: 0;
+  }
 }
 
 .transition-bg {
@@ -58,6 +73,8 @@ section {
   z-index       : 10000;
   pointer-events: none;
 }
+
+
 
 
 

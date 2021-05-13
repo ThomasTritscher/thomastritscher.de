@@ -2,6 +2,12 @@ section {
   max-width: 60vw;
   margin   : 0 auto;
   padding  : 0 30px;
+
+  @media only screen and (max-width: 770px) {
+    max-width: 100%;
+    margin   : 0 auto;
+    padding  : 0 70px;
+  }
 }
 
 .h {

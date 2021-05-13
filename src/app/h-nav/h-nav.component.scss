@@ -16,7 +16,6 @@
     overflow : hidden;
     min-width: 12em;
   }
-
 }
 
 .h-nav-wrapper {
@@ -35,6 +34,10 @@
     text-decoration: none;
     text-transform: uppercase;
     display: block;
+
+    &:hover{
+      color:red;
+    }
   }
 }
 

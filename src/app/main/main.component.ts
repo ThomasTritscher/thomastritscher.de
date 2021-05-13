@@ -15,11 +15,8 @@ import { TransformBGService } from '../services/transform-bg.service';
 export class MainComponent implements OnInit {
 
 
-  // timeBetweenWheels = 1000;
   counter = 0;
   startWheel!: number;
-  img_opacity = 1;
-  
 
   constructor(public transformBg: TransformBGService , public layer: LayerChangeService) { }
 
@@ -35,6 +32,8 @@ export class MainComponent implements OnInit {
       if(elapse > 300){
         this.startWheel = event.timeStamp;
         this.counter++;
+        console.log(this.counter);
+
       }
       
       if(this.counter < 2){
@@ -50,6 +49,10 @@ export class MainComponent implements OnInit {
         this.layer.thirdWheelEvent();
         this.transformBg.switchBgToFull();
       }
+      // if(this.counter > 3){
+      //   this.layer.secondWheelEvent();
+      //   this.transformBg.switchBgToZero();
+      // }
      
     });
   }
