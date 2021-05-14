@@ -45,6 +45,15 @@ section {
     left    : 0;
   }
 
+  @media only screen and (max-width: 770px) {
+    height  : 38vh;
+    width   : 100vw;
+    overflow: hidden;
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+  }
+
 }
 
 .img-wrapper-bg {
@@ -126,8 +135,8 @@ section {
   color         : var(--primarytext);
 
   @media only screen and (max-width: 770px) {
-    font-size: 17vw;
-    margin: 110px 0 0;
+    font-size     : 17vw;
+    margin        : 110px 0 0;
     letter-spacing: -1.5vw;
   }
 
@@ -142,7 +151,7 @@ section {
   overflow: hidden;
   position: relative;
 
-  
+
 }
 
 .s1-h1-pre-wrapper {
@@ -171,9 +180,9 @@ section {
   }
 
   @media only screen and (max-width: 500px) {
-    margin: .9%;
-    margin-left: 1px;
-    font-size: 5vw;
+    margin        : .9%;
+    margin-left   : 1px;
+    font-size     : 5vw;
     letter-spacing: -.3vw;
   }
 
@@ -198,12 +207,34 @@ section {
   h2 {
     font-weight: 500;
     float      : left;
+
+    @media only screen and (max-width: 770px) {
+      font-weight: 500;
+    }
   }
 
   p {
     margin     : 0;
     font-size  : 1.3vw;
-    font-weight: 300
+    font-weight: 300;
+
+    @media only screen and (max-width: 770px) {
+      margin: 0;
+      font-size: 3.3vw;
+      font-weight: 300;
+     }
+  }
+
+
+  @media only screen and (max-width: 770px) {
+    margin    : 0;
+    width     : 100%;
+    box-sizing: border-box;
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    padding: 100px 0;
   }
 }
 
