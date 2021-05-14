@@ -15,6 +15,15 @@
     padding  : 0 0 30px;
     overflow : hidden;
     min-width: 12em;
+
+    @media only screen and (max-width: 770px) {
+      float: none;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin: 2% 0 0 8.5%;
+
   }
 }
 
@@ -27,17 +36,30 @@
   display : block;
   overflow: hidden;
 
-  a{
-    font-size: 1.2vw;
-    font-weight: 500;
-    color: var(--secondarytext);
+  a {
+    font-size      : 1.2vw;
+    font-weight    : 500;
+    color          : var(--secondarytext);
     text-decoration: none;
-    text-transform: uppercase;
-    display: block;
+    text-transform : uppercase;
+    display        : block;
 
-    &:hover{
-      color:red;
+    &:hover {
+      color: red;
+      
     }
+
+    @media only screen and (max-width: 770px) {
+      font-size      : 4vw;
+      font-weight    : 500;
+      color          : #585858;
+      text-decoration: none;
+      text-transform : uppercase;
+
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    height: 4vw;
   }
 }
 
@@ -46,13 +68,22 @@
   transform : translateZ(0);
   transition: all .8s cubic-bezier(.87, 0, .3, 1.04);
 
-  a{
-    font-size: 1.2vw;
-    font-weight: 500;
-    color: var(--secondarytext);
+  a {
+    font-size      : 1.2vw;
+    font-weight    : 500;
+    color          : var(--secondarytext);
     text-decoration: none;
-    text-transform: uppercase;
-    display: block;
+    text-transform : uppercase;
+    display        : block;
+
+    @media only screen and (max-width: 770px) {
+      font-size      : 4vw;
+      font-weight    : 500;
+      color          : #585858;
+      text-decoration: none;
+      text-transform : uppercase;
+
+    }
+
   }
-  
 }
