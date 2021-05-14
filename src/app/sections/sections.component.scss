@@ -21,6 +21,10 @@ section {
   bottom        : 0;
   padding       : 0;
   pointer-events: none;
+
+  @media only screen and (max-width: 770px) {
+    padding: 0 30px;
+  }
 }
 
 .img-wrapper {
@@ -31,6 +35,16 @@ section {
   bottom    : 15vh;
   left      : 55vw;
   transition: all .8s cubic-bezier(.87, 0, .3, 1.04); //at screen changes 
+
+  @media only screen and (max-width: 500px) {
+    width   : 100vw;
+    height  : 30vh;
+    overflow: hidden;
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+  }
+
 }
 
 .img-wrapper-bg {
@@ -70,6 +84,17 @@ section {
   left      : 55vw;
   opacity   : 0;
   transition: all .8s cubic-bezier(.87, 0, .3, 1.04);
+
+
+  @media only screen and (max-width: 770px) {
+    height  : 38vh;
+    width   : 100vw;
+    overflow: hidden;
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+  }
+
 }
 
 .curtain-left {
@@ -99,12 +124,25 @@ section {
   letter-spacing: -.5vw;
   margin        : 12% 0 0 12%;
   color         : var(--primarytext);
+
+  @media only screen and (max-width: 770px) {
+    font-size: 17vw;
+    margin: 110px 0 0;
+    letter-spacing: -1.5vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 22vw;
+    margin   : 110px 0 0;
+  }
 }
 
 .s1-h1-wrapper {
   display : block;
   overflow: hidden;
   position: relative;
+
+  
 }
 
 .s1-h1-pre-wrapper {
@@ -113,6 +151,7 @@ section {
   display       : block;
   letter-spacing: -.08vw;
   color         : var(--secondarytext);
+
 }
 
 .s1-h1-wrapper-e {
@@ -126,6 +165,18 @@ section {
   display       : block;
   letter-spacing: -.08vw;
   color         : var(--secondarytext);
+
+  @media only screen and (max-width: 770px) {
+    font-size: 5vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin: .9%;
+    margin-left: 1px;
+    font-size: 5vw;
+    letter-spacing: -.3vw;
+  }
+
 }
 
 .content-wrapper {
