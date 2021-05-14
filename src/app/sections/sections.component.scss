@@ -46,7 +46,7 @@ section {
   }
 
   @media only screen and (max-width: 770px) {
-    height  : 38vh;
+    height  : 37vh;
     width   : 100vw;
     overflow: hidden;
     position: absolute;
@@ -69,6 +69,14 @@ section {
   min-width : 200px;
   margin    : 0 auto;
   align-self: center;
+
+  @media only screen and (max-width: 770px) {
+    max-width : 76vw;
+  }
+
+  @media only screen and (max-width: 500px) {
+    max-width : 100vw;
+  }
 
 }
 
@@ -230,6 +238,7 @@ section {
     margin    : 0;
     width     : 100%;
     box-sizing: border-box;
+    padding: 100px 0;
   }
 
 
@@ -242,7 +251,15 @@ section {
   margin: 14.8vh auto 0 12vw;
   width : 60vw;
 
+  @media only screen and (max-width: 770px) {
+    margin    : 0;
+  }
+
   label {
     font-size: 6vw;
+
+    @media only screen and (max-width: 770px) {
+      font-size: 11vw;
+    }
   }
 }

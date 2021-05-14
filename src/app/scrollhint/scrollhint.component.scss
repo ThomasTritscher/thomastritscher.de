@@ -7,6 +7,10 @@
   justify-content: space-between;
   align-items    : center;
   flex-direction : column;
+
+  @media only screen and (max-width: 770px){
+    display: none;
+  }
 }
 
 .scroll-nav-box {
@@ -49,4 +53,17 @@
   height          : 96px;
   background-color: black;
   
+}
+.mobile-hint {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+
+  @media only screen and (min-width: 770px){
+    display: none;
+  }
+
 }
