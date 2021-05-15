@@ -8,7 +8,7 @@
 
   @media only screen and (max-width: 770px) {
     margin: 16px 12px;
-    width: 56px;
+    width : 56px;
   }
 }
 
@@ -105,7 +105,7 @@ menu {
   display         : grid;
   opacity         : 0;
   transition      : opacity 1s ease-in-out;
-  pointer-events  : none;
+  pointer-events  : all;
 
 
   ul {
@@ -142,6 +142,7 @@ menu {
 
   li {
     padding: 1vh 0;
+    animation: fade-from-left 1s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none;
   }
 }
 
@@ -151,7 +152,8 @@ menu {
 
 .darkLinks {
   li {
-    color: white;
+    color    : white;
+    animation: fade-from-left 1s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none;
   }
 
   a {
@@ -202,5 +204,17 @@ menu {
     width  : 100%;
     right  : 0;
     display: grid;
+  }
+}
+
+@keyframes fade-from-left {
+  0% {
+    opacity  : 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity  : 1;
+    transform: translateX(0);
   }
 }

@@ -22,15 +22,12 @@ export class OuterFrameComponent implements OnInit {
 
   overlayMenu() {
     document.getElementById('m-m-overlay')?.classList.add('active');
-    // this.changeMenuButton();
     this.darkMode = true;
     this.spanColor = 'white';
     this.o_inactiv = '1';
     this.z_inactive = '12';
   }
-  // changeMenuButton() {
-  //   this.defaultColor = '#FF5722';
-  // }
+  
   closeMenu(){
     document.getElementById('m-m-overlay')?.classList.remove('active');
     this.darkMode = false;
