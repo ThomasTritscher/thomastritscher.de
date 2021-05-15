@@ -8,6 +8,10 @@ section {
     margin   : 0 auto;
     padding  : 0 70px;
   }
+
+  @media only screen and (max-width: 320px) {
+    padding: 0px 8px;
+  }
 }
 
 .h {
@@ -152,6 +156,10 @@ section {
     font-size: 22vw;
     margin   : 110px 0 0;
   }
+  @media only screen and (min-width: 1800px) {
+    margin        : 8% 0 0 12%;
+  }
+  
 }
 
 .s1-h1-wrapper {
@@ -204,6 +212,7 @@ section {
     overflow: hidden;
     display : block;
     padding : 5px 0;
+
   }
 
   .content-a {
@@ -238,12 +247,15 @@ section {
     margin    : 0;
     width     : 100%;
     box-sizing: border-box;
-    padding: 100px 0;
+    padding: 70px 0;
   }
 
 
   @media only screen and (max-width: 500px) {
-    padding: 100px 0;
+    padding: 60px 0;
+  }
+  @media only screen and (max-width: 320px) {
+    padding: 32px 2px;
   }
 }
 
