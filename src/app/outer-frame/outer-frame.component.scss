@@ -68,6 +68,7 @@ menu {
   display  : flex;
   flex-wrap: wrap;
   padding  : 30px;
+  margin: 0;
 
   @media only screen and (max-width: 770px) {
     padding: 0px;
