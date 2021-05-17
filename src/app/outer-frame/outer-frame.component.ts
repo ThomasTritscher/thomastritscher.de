@@ -13,6 +13,7 @@ export class OuterFrameComponent implements OnInit {
   spanColor = '#585858';
   o_inactiv = '0';
   z_inactive = '0';
+  
 
   constructor() { }
 

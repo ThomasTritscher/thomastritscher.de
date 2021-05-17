@@ -68,7 +68,7 @@ menu {
   display  : flex;
   flex-wrap: wrap;
   padding  : 30px;
-  margin: 0;
+  margin   : 0;
 
   @media only screen and (max-width: 770px) {
     padding: 0px;
@@ -142,9 +142,17 @@ menu {
   }
 
   li {
-    padding: 1vh 0;
+    padding  : 1vh 0;
+    
+  }
+ 
+}
+
+.animateList {
+  li {
     animation: fade-from-left 1s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none;
   }
+
 }
 
 .active {
@@ -154,7 +162,6 @@ menu {
 .darkLinks {
   li {
     color    : white;
-    animation: fade-from-left 1s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none;
   }
 
   a {
@@ -185,10 +192,9 @@ menu {
   }
 
   li {
-    float  : left;
-    padding: 0 5px;
-    color  : white;
-
+    float    : left;
+    padding  : 0 5px;
+    color    : white;
   }
 
   a {
