@@ -37,7 +37,7 @@
   <span [ngStyle]="{'background' : defaultColor}" class="dot"></span>
   <span [ngStyle]="{'background' : accentColor}" class="dot"></span>
 </menu>
-<div id="m-m-overlay" class="main-menu">
+<div id="m-m-overlay" class="main-menu" [ngStyle]="{'zIndex' : z_inactive}">
   <ul>
     <li *ngIf="darkMode" [ngStyle]= "{'animation' : 'fade-from-left 1s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none'}">
       <span>01</span>
