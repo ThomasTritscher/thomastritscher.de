@@ -41,19 +41,19 @@
   <ul>
     <li *ngIf="darkMode" [ngStyle]= "{'animation' : 'fade-from-left 1s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none'}">
       <span>01</span>
-      <a href="">projects</a>
+      <a routerLink="projects">projects</a>
     </li>
     <li *ngIf="darkMode" [ngStyle]= "{'animation' : 'fade-from-left 1.2s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none'}">
       <span>02</span>
-      <a href="">my journey</a>
+      <a routerLink="journey">my journey</a>
     </li>
     <li *ngIf="darkMode" [ngStyle]= "{'animation' : 'fade-from-left 1.3s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none'}">
       <span>03</span>
-      <a href="">person</a>
+      <a routerLink="">person</a>
     </li>
     <li *ngIf="darkMode" [ngStyle]= "{'animation' : 'fade-from-left 1.4s cubic-bezier(0.72, -0.01, 0.45, 0.94) 0s 1 normal none'}">
       <span>04</span>
-      <a href="">say hello!</a>
+      <a routerLink="contact">say hello!</a>
     </li>
   </ul>
 </div>
@@ -61,10 +61,10 @@
 <div [ngStyle]="{'opacity' : o_inactiv}" class="legals">
   <ul>
     <li>
-      <a routerLink="/imprint">imprint</a>
+      <a routerLink="imprint">imprint</a>
     </li>
     <li >
-      <a routerLink="/data-protection">data protection</a>
+      <a routerLink="data-protection">data protection</a>
     </li>
   </ul>
 </div>
