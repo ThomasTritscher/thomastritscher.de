@@ -34,6 +34,7 @@ export class OuterFrameComponent implements OnInit {
     this.darkMode = false;
     this.spanColor = '#585858';
     this.o_inactiv = '0';
+    this.z_inactive = '0';
   }
 
 }

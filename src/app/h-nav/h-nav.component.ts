@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LayerChangeService } from '../services/layer-change.service';
+import { TransitionBgService } from '../services/transition-bg.service';
 
 @Component({
   selector: 'app-h-nav',
@@ -8,7 +9,7 @@ import { LayerChangeService } from '../services/layer-change.service';
 })
 export class HNavComponent implements OnInit {
 
-  constructor(public layer: LayerChangeService) { }
+  constructor(public layer: LayerChangeService, public translate: TransitionBgService) { }
 
 
   ngOnInit(): void {

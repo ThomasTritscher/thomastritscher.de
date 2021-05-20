@@ -3,6 +3,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { element } from 'protractor';
 import { LayerChangeService } from '../services/layer-change.service';
 import { TransformBGService } from '../services/transform-bg.service';
+import { TransitionBgService } from '../services/transition-bg.service';
 
 
 
@@ -18,7 +19,7 @@ export class MainComponent implements OnInit {
   counter = 0;
   startWheel!: number;
 
-  constructor(public transformBg: TransformBGService , public layer: LayerChangeService) { }
+  constructor(public transformBg: TransformBGService , public layer: LayerChangeService, public translate: TransitionBgService) { }
 
   ngOnInit(): void {
     window.addEventListener("wheel", (event: any) =>{

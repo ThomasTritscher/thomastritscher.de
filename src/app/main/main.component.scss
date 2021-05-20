@@ -1,17 +1,4 @@
 
-* {
-  box-sizing: border-box;
-}
-section {
-  max-width: 60vw;
-  margin: 0 auto;
-  padding: 0 30px;
-  @media only screen and (max-width: 770px) {
-    max-width: 100%;
-    margin   : 0 auto;
-    padding  : 0 70px;
-  }
-}
 .img-wrap {
   width: 50vw;
   height: 90vh;
@@ -51,7 +38,7 @@ section {
 .bg-left {
   width           : 100vw;
   height          : 100vh;
-  background-color: var(--darkprimarycolor);
+  background-color: var(--primarycolor);
   display         : block;
   position        : absolute;
   opacity         : 0.6;
@@ -68,7 +55,6 @@ section {
   position      : fixed;
   top           : 0;
   left          : 0;
-  opacity       : 0;
   background    : var(--accentcolor);
   z-index       : 10000;
   pointer-events: none;

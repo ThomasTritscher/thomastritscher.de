@@ -14,10 +14,10 @@
 
 .h-span {
   position   : fixed;
-  font-size  : 20px;
+  font-size  : 16px;
   color      : #585858;
   transform  : rotate(-90deg);
-  left       : -64px;
+  left       : -48px;
   top        : 45%;
   display    : block;
   font-weight: 500;
@@ -61,19 +61,20 @@
 menu {
   width    : 34px;
   position : fixed;
-  right    : 0;
-  top      : 0;
+  right    : 24px;
+  top      : 24px;
   z-index  : 888;
   cursor   : pointer;
   display  : flex;
   flex-wrap: wrap;
-  padding  : 30px;
+  padding  : 0;
   margin   : 0;
 
   @media only screen and (max-width: 770px) {
     padding: 0px;
-    margin : 16px 12px;
     width  : 34px;
+    right: 8px;
+    top: 16px;
   }
 
 }
@@ -84,7 +85,7 @@ menu {
   background   : #585858;
   border-radius: 100%;
   display      : block;
-  margin       : 2.4px;
+  margin       : 2px;
   transition   : all .3s ease-in-out;
 
   @media only screen and (max-width: 770px) {

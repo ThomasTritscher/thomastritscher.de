@@ -6,6 +6,12 @@
 
   a {
     padding: 8px;
+    // filter: grayscale(100%);
+    cursor: pointer;
+
+    // &:hover {
+    //   filter: grayscale(0);
+    // }
   }
 
   img {
