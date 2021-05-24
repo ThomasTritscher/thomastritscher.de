@@ -136,7 +136,6 @@ export class LayerChangeService {
   // var for scrollthint bar
   changeLength() {
     this.default_length3 = 'translate(' + 0 + '%)';
-
   }
   scrollSpan() {
     this.runout = 'translateY(' + 100 + '%)';

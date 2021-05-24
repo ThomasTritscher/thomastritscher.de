@@ -14,6 +14,7 @@ import { ProjectGridComponent } from './project-grid/project-grid.component';
 import { HNavComponent } from './h-nav/h-nav.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { StoryComponent } from './story/story.component';
 
 
 
@@ -31,6 +32,7 @@ import { ContactComponent } from './contact/contact.component';
     HNavComponent,
     ProjectsComponent,
     ContactComponent,
+    StoryComponent,
     
 
     

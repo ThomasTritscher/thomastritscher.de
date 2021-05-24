@@ -1,21 +1,4 @@
 
-.h {
-  position      : fixed;
-  height        : 100%;
-  max-width     : 100%;
-  width         : 100%;
-  top           : 0;
-  left          : 0;
-  right         : 0;
-  bottom        : 0;
-  padding       : 0;
-  pointer-events: none;
-
-  @media only screen and (max-width: 770px) {
-    padding: 0 30px;
-  }
-}
-
 .img-wrapper {
   width     : 35vw;
   height    : 70vh;

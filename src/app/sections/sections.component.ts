@@ -14,12 +14,6 @@ export class SectionsComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-  animate(event: any, element: HTMLElement) {
-    console.log(event, element.innerHTML);
-    element.style.background = 'red';
-  }
   
 
 }

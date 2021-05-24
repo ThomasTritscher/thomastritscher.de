@@ -25,6 +25,8 @@ body {
   box-sizing: border-box;
 }
 
+
+//main container
 section {
   max-width: 60vw;
   margin   : 0 auto;
@@ -41,17 +43,90 @@ section {
   }
 }
 
+.h {
+  position      : fixed;
+  height        : 100%;
+  max-width     : 100%;
+  width         : 100%;
+  top           : 0;
+  left          : 0;
+  right         : 0;
+  bottom        : 0;
+  padding       : 0;
+  pointer-events: none;
+
+  @media only screen and (max-width: 770px) {
+    padding: 0 30px;
+  }
+}
+
+article {
+  position: relative;
+}
+
+.scroll-container {
+  position: fixed;
+  width   : 100vw;
+  height  : 100vh;
+  overflow: auto;
+}
+
+.wrapper_inner {
+  display : block;
+  padding : 100px 0 0;
+  overflow: hidden;
+}
+
+.project-header {
+  margin-bottom: 100px;
+}
+
+.project-headline-wrapper {
+  color         : #585858;
+  font-size     : 6vw;
+  font-weight   : 500;
+  line-height   : 7vw;
+  letter-spacing: -.2vw;
+  margin        : 0 0 5vw;
+}
+
+//page header
+
+.project-headline-content {}
+
+
+
+.project-description-wrapper {
+  font-size  : 1.8vw;
+  font-weight: 300;
+  color      : #a0a0a0;
+}
+
+.project-description-content {}
+
+
+// space classes
+
 hr {
   width  : 100%;
   border : 0;
   padding: 0;
   margin : 0;
+}
 
-  .spacer100 {
-    height: 100px;
-  }
-  .spacer300 {
-    height: 300px;
-  }
+.spacer100 {
+  height: 100px;
+}
 
+.spacer300 {
+  height: 300px;
+}
+
+
+
+//font-stlyes
+
+.outlined {
+  color              : #fff;
+  -webkit-text-stroke: 1px #585858;
 }
