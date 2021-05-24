@@ -1,7 +1,7 @@
 .h-nav {
   margin  : 2% 0 0 12.5%;
   position: fixed;
-  top     : 55%;
+  top     : 60%;
   z-index : 8;
 
   ul {
@@ -12,16 +12,26 @@
 
   li {
     float    : left;
-    padding  : 0 0 30px;
+    padding  : 24px 0 30px;
     overflow : hidden;
-    min-width: 12em;
+    min-width: 8em;
 
     @media only screen and (max-width: 770px) {
       float: none;
+      padding  : 20px 0 30px;
+      
+    }
+    @media only screen and (max-width: 500px) {
+      padding  : 20px 0 30px;
+  
     }
     @media only screen and (min-width: 1800px) {
       min-width: 16em;
     }
+  }
+  @media only screen and (max-width: 770px) {
+    top: 48%;
+    
   }
 
   @media only screen and (max-width: 500px) {
@@ -50,7 +60,7 @@
     
 
     &:hover {
-    
+    color: #000;
       
     }
 
