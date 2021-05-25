@@ -1,4 +1,3 @@
-
 .projects-wrap {
   position      : relative;
   z-index       : 1;
@@ -25,14 +24,14 @@
 .project-text-content {
   position: absolute;
   z-index : 2;
-  right   : 3vw;
-  bottom  : 3vw;
+  right   : 2vw;
+  bottom  : 1vw;
 }
 
 .project-number {
-  color      : orange;
+  color      : var(--accentcolor);
   font-size  : 3vw;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .project-title {
@@ -62,11 +61,16 @@ figure {
   width   : 100%;
   position: relative;
   z-index : 1;
+  filter  : grayscale(100%);
+
+  &:hover {
+    filter                  : grayscale(0%);
+  }
 }
 
 .project-cta {
   position: absolute;
-  top     : 300px;
+  top     : 200px;
   right   : -3vw;
   z-index : 10;
 
