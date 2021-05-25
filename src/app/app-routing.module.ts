@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainComponent } from './main/main.component';
+import { PersonComponent } from './person/person.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { StoryComponent } from './story/story.component';
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'data-protection' , component: DataProtectionComponent },
   { path: 'projects' , component: ProjectsComponent },
   { path: 'story' , component: StoryComponent },
+  { path: 'person' , component: PersonComponent },
   { path: 'contact' , component: ContactComponent },
 
 ];
