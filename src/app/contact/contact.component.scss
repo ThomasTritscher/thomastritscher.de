@@ -81,3 +81,59 @@
     text-decoration: none;
   }
 }
+
+.content-p {
+  display   : block;
+  transition: all 1s ease;
+  transform : translate3d(0, -145%, 0);
+
+  p {
+    font-size     : 5vw;
+    font-weight   : 500;
+    letter-spacing: -.3vw;
+    padding       : 0 0 0 10vw;
+  }
+
+  a {
+    text-decoration: none;
+    color          : var(--accentcolor);
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+.content-wrapper_textme {
+  margin: 14.8vh auto 0 12vw;
+  width : 60vw;
+}
+
+.content-t {
+  font-size: 6vw;
+
+  a {
+    text-decoration: none;
+    color          : var(--accentcolor);
+  }
+
+  b {
+    font-weight: 500;
+  }
+}
+
+.content-img-wrapper {
+  overflow  : hidden;
+  display   : block;
+  min-height: 30vh;
+  position  : absolute;
+  left      : 140px;
+  top       : 260px;
+  z-index   : -1;
+  opacity   : .6;
+
+  img {
+    width     : 40vw;
+    transition: transform 1.5s cubic-bezier(.93, -.08, .43, .99);
+  }
+}
