@@ -15,13 +15,15 @@ export class ContactComponent implements OnInit {
   z_active = 9;
   z_inactive = 0;
   z_inactive2 = 0;
-  z_inactive3 = 0;
+  z_inactive3 = -1;
 
   //var for text translate
   firstText = 'translate3d(0px, 0%, 0px)';
   secondText = 'translate3d(0px, -145%, 0px)';
   thirdText = 'translate3d(0px, -145%, 0px)';
   fourthText = 'translate3d(0px, -145%, 0px)';
+
+  defaultImgPosition = 'translate3d(0px, -600px, 0px)';
 
 
 
@@ -75,6 +77,7 @@ export class ContactComponent implements OnInit {
     this.z_inactive2 = 9;
     this.secondText = 'translate3d(0px, -145%, 0px)';
     this.thirdText = 'translate3d(0px, 0%, 0px)';
+    this.defaultImgPosition = 'translate3d(0px, 0px, 0px)';
    
   }
   thirdWheelEvent() {
@@ -82,6 +85,7 @@ export class ContactComponent implements OnInit {
     this.z_inactive3 = 9;
     this.thirdText = 'translate3d(0px, -145%, 0px)';
     this.fourthText = 'translate3d(0px, 0%, 0px)';
+    this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
     
   }
 
