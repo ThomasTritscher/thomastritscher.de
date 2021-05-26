@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,6 +10,20 @@ export class ContactComponent implements OnInit {
 
   counter = 0;
   startWheel!: number;
+
+  //var for Layers
+  z_active = 9;
+  z_inactive = 0;
+  z_inactive2 = 0;
+  z_inactive3 = 0;
+
+  //var for text translate
+  firstText = 'translate3d(0px, 0%, 0px)';
+  secondText = 'translate3d(0px, -145%, 0px)';
+  thirdText = 'translate3d(0px, -145%, 0px)';
+  fourthText = 'translate3d(0px, -145%, 0px)';
+
+
 
   constructor() { }
 
@@ -29,14 +44,15 @@ export class ContactComponent implements OnInit {
       }
 
       if (this.counter < 2) {
-
+        this.firstWheelEvent();
       }
 
       if (this.counter == 2) {
-
+        this.secondWheelEvent();
       }
 
       if (this.counter == 3) {
+        this.thirdWheelEvent();
 
       }
       // if(this.counter > 3){
@@ -46,6 +62,28 @@ export class ContactComponent implements OnInit {
 
     });
   }
-  
+
+  firstWheelEvent() {
+    this.z_active = 0;
+    this.z_inactive = 9;
+    this.firstText = 'translate3d(0px, -145%, 0px)';
+    this.secondText = 'translate3d(0px, 0%, 0px)';
+
+  }
+  secondWheelEvent() {
+    this.z_inactive = 0;
+    this.z_inactive2 = 9;
+    this.secondText = 'translate3d(0px, -145%, 0px)';
+    this.thirdText = 'translate3d(0px, 0%, 0px)';
+   
+  }
+  thirdWheelEvent() {
+    this.z_inactive2 = 0;
+    this.z_inactive3 = 9;
+    this.thirdText = 'translate3d(0px, -145%, 0px)';
+    this.fourthText = 'translate3d(0px, 0%, 0px)';
+    
+  }
+
 
 }
