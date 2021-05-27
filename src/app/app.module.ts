@@ -20,6 +20,7 @@ import { PersonComponent } from './person/person.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,15 +36,12 @@ import { PersonComponent } from './person/person.component';
     ContactComponent,
     StoryComponent,
     PersonComponent,
-    
 
-    
-   
-  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

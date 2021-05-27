@@ -6,11 +6,13 @@
     <img src="/assets/img/face1.png" alt="">
   </section>
   <div class="bg-wrap">
-    <div  [ngStyle]="{ 'transform': transformBg.valueBg }" class="bg-left">
+    <div [ngStyle]="{ 'transform': transformBg.valueBg }" class="bg-left">
     </div>
   </div>
   <app-scrollhint></app-scrollhint>
   <app-h-nav></app-h-nav>
   <app-sections></app-sections>
   <div class="transition-bg" [ngStyle]="{ 'opacity': translate.transitionOpacity }"></div>
+  <!-- <div #cursor class="cursor"></div>
+  <div #cursor2 class="cursor2"></div> -->
 </main>

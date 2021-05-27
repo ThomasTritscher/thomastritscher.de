@@ -1,3 +1,4 @@
+import { getTranslationDeclStmts } from '@angular/compiler/src/render3/view/template';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  translate = 'translate3d(0px, 0%, 0px)';
   constructor() { }
 
   ngOnInit(): void {
