@@ -16,6 +16,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { StoryComponent } from './story/story.component';
 import { PersonComponent } from './person/person.component';
+import { CursorComponent } from './cursor/cursor.component';
 
 
 
@@ -36,6 +37,7 @@ import { PersonComponent } from './person/person.component';
     ContactComponent,
     StoryComponent,
     PersonComponent,
+    CursorComponent,
 
   ],
   imports: [

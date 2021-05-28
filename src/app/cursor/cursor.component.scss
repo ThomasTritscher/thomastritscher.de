@@ -1,0 +1,38 @@
+
+.cursor {
+  position: fixed;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--accentcolor);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+}
+
+
+.hover_state:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: var(--accentcolor);
+  opacity: 0.5;
+}
+
+.hover_state:hover ~ .cursor2 {
+  opacity: 0;
+}

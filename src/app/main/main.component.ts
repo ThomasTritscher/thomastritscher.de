@@ -16,18 +16,18 @@ import { TransitionBgService } from '../services/transition-bg.service';
 export class MainComponent implements OnInit {
 
 
-  // // Cursor follower
-  // @ViewChild('cursor')
-  // cursor!: ElementRef;
-  // @ViewChild('cursor2')
-  // cursor2!: ElementRef;
+  // Cursor follower
+  @ViewChild('cursor')
+  cursor!: ElementRef;
+  @ViewChild('cursor2')
+  cursor2!: ElementRef;
 
-  // ngAfterViewInit(): void {
-  //   document.addEventListener('mousemove', e => {
-  //     this.cursor.nativeElement.style.cssText = this.cursor2.nativeElement.style.cssText =
-  //       'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;';
-  //   });
-  // }
+  ngAfterViewInit(): void {
+    document.addEventListener('mousemove', e => {
+      this.cursor.nativeElement.style.cssText = this.cursor2.nativeElement.style.cssText =
+        'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;';
+    });
+  }
 
 
   counter = 0;
