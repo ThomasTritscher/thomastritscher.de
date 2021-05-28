@@ -30,8 +30,8 @@
 .sm {
   position: fixed;
   bottom  : 0;
-  left    : 0;
-  padding : 30px;
+  left    : 8px;
+  padding : 16px;
   z-index : 999;
 
   ul {
@@ -46,9 +46,10 @@
   }
 
   a {
-    color          : black;
+    color          : var(--secondarytex);
     text-decoration: none;
-    font-size      : 12px;
+    font-size      : 14px;
+    font-weight    : 500;
   }
 
   @media only screen and (max-width: 770px) {
@@ -73,8 +74,8 @@ menu {
   @media only screen and (max-width: 770px) {
     padding: 0px;
     width  : 34px;
-    right: 8px;
-    top: 16px;
+    right  : 8px;
+    top    : 16px;
   }
 
 }
@@ -143,10 +144,10 @@ menu {
   }
 
   li {
-    padding  : 1vh 0;
-    
+    padding: 1vh 0;
+
   }
- 
+
 }
 
 .animateList {
@@ -162,7 +163,7 @@ menu {
 
 .darkLinks {
   li {
-    color    : white;
+    color: white;
   }
 
   a {
@@ -193,9 +194,9 @@ menu {
   }
 
   li {
-    float    : left;
-    padding  : 0 5px;
-    color    : white;
+    float  : left;
+    padding: 0 5px;
+    color  : white;
   }
 
   a {
