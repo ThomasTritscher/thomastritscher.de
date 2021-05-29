@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonComponent implements OnInit {
 
+
+  defaultTranslate = 'translate3d(0px, 0px, 0px)';
+
   constructor() { }
 
   ngOnInit(): void {
