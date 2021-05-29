@@ -1,0 +1,48 @@
+.scrollbar-track {
+  position           : absolute;
+  opacity            : 0;
+  z-index            : 1;
+  background         : rgba(222, 222, 222, .75);
+  -webkit-user-select: none;
+  -moz-user-select   : none;
+  -ms-user-select    : none;
+  user-select        : none;
+  -webkit-transition : opacity 0.5s 0.5s ease-out;
+  transition         : opacity 0.5s 0.5s ease-out;
+
+}
+
+.scrollbar-track-x {
+  bottom: 0;
+  left  : 0;
+  width : 100%;
+  height: 8px;
+}
+
+
+.scrollbar-track-y {
+  top   : 0;
+  right : 0;
+  width : 8px;
+  height: 100%;
+
+}
+
+.scroll-thumb {
+  position     : absolute;
+  top          : 0;
+  left         : 0;
+  width        : 8px;
+  height       : 8px;
+  background   : rgba(0, 0, 0, .5);
+  border-radius: 4px;
+
+}
+
+.scroll-thumb-x {
+  width: 1165px;
+}
+
+.scroll-thumb-x {
+  height: 182.749px;
+}

@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { StoryComponent } from './story/story.component';
 import { PersonComponent } from './person/person.component';
 import { CursorComponent } from './cursor/cursor.component';
+import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
 
 
 
@@ -38,6 +39,7 @@ import { CursorComponent } from './cursor/cursor.component';
     StoryComponent,
     PersonComponent,
     CursorComponent,
+    ScrollBarComponent,
 
   ],
   imports: [
