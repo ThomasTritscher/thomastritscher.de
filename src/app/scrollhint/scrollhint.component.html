@@ -13,7 +13,7 @@
       <div [ngStyle]="{'transform' : layer.default_length3}" class="bar-bg"></div>
     </div>
   </div>
-  <div [ngStyle]="{'transform' : layer.runout}" class="scroll-nav-scripture">
+  <div [ngStyle]="{'transform' : layer.runout}" [class.darkLinks]="darkMode" class="scroll-nav-scripture">
     <span>ScrollDown</span>
     <div class="scroll-vertical-line" [ngStyle]="{}"></div>
   </div>

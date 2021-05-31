@@ -8,7 +8,7 @@ import { LayerChangeService } from '../services/layer-change.service';
 })
 export class ScrollhintComponent implements OnInit {
 
-  
+  darkMode = false;
 
   constructor(public layer: LayerChangeService) { }
 
