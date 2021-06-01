@@ -25,14 +25,15 @@ figure {
     margin  : .5vw 0;
     position: relative;
     z-index : 1;
-    filter: brightness(1.4);
+    filter  : brightness(1.4);
   }
 }
 
 .content-text {
   font-size: 1.4vw;
 }
-.h2-default{
+
+.h2-default {
   font-size: 2vw;
 }
 
@@ -41,7 +42,32 @@ figure {
   padding   : 0;
   list-style: none;
 }
-.list_item-default{
+
+.list_item-default {
   font-size: 1.2vw;
-  margin: 0;
+  margin   : 0;
+}
+
+.fadeIn {
+  opacity: 0;
+}
+
+.show {
+  -webkit-animation          : fade-in-from-bottom 1.2s cubic-bezier(.29, .71, .33, .88);
+  animation                  : fade-in-from-bottom 1.2s cubic-bezier(.29, .71, .33, .88);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode        : forwards;
+
+}
+
+@keyframes fade-in-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
 }

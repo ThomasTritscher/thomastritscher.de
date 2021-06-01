@@ -13,6 +13,7 @@ export class PersonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementById('fin')?.classList.add('show');
   }
 
 }
