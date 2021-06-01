@@ -70,5 +70,20 @@ export class MainComponent implements OnInit {
       // }
 
     });
+    // window.addEventListener("wheel", (event: any) => {
+    //   if (event.deltaY < 0) {
+    //     console.log('scrolling up');
+
+
+
+    //   } else if (event.deltaY > 0) {
+    //     console.log('scrolling down');
+    //     this.transformBg.switchBgToZero();
+    //     this.layer.firstWheelEvent();
+
+
+    //   }
+
+    // });
   }
 }

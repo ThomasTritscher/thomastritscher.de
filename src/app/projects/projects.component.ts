@@ -12,6 +12,23 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener("wheel", (event: any) => {
+      if (event.deltaY < 0) {
+        console.log('scrolling up');
+
+
+
+      } else if (event.deltaY > 0) {
+        console.log('scrolling down');
+        scroll();
+
+
+      }
+
+    });
+  }
+  scroll() {
+    this.translate = 'translate3d(0px, 50%, 0px)';
   }
 
 }

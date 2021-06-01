@@ -1,13 +1,15 @@
 .icon-wrapper {
-  width  : 58px;
-  height : 58px;
-  border-radius: 50%;
-  margin: 0 8px;
+  width          : 50%;
+  height         : auto;
+  margin         : 0 8px;
+  background     : var(--primarycolor);
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
 
-  &:hover {
-    background-color: var(--accentcolor);
-    cursor          : pointer;
-  }
+}
+.p-wrap{
+  width: 50%;
 }
 
 .coding-icons {
@@ -16,16 +18,16 @@
   padding: 8px;
 }
 
-ul{
+ul {
   padding: 0;
 
   li {
-    display: flex;
+    display    : flex;
     align-items: center;
+    justify-content: space-evenly;
   }
-  p{
+
+  p {
     font-size: 1.4vw;
   }
 }
-
-
