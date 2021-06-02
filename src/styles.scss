@@ -143,3 +143,16 @@ hr {
   color              : #fff;
   -webkit-text-stroke: 1px #585858;
 }
+
+//transition Background
+.transition-bg {
+  height        : 100vh;
+  width         : 100vw;
+  position      : fixed;
+  top           : 0;
+  left          : 0;
+  background    : var(--accentcolor);
+  z-index       : 10000;
+  opacity: 0;
+  pointer-events: none;
+}

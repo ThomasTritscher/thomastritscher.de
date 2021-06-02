@@ -18,6 +18,7 @@ import { StoryComponent } from './story/story.component';
 import { PersonComponent } from './person/person.component';
 import { CursorComponent } from './cursor/cursor.component';
 import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -40,11 +41,14 @@ import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
     PersonComponent,
     CursorComponent,
     ScrollBarComponent,
+   
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
    
   ],
   providers: [],

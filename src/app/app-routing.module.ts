@@ -8,15 +8,11 @@ import { PersonComponent } from './person/person.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { StoryComponent } from './story/story.component';
 
-
-
-
-
 const routes: Routes = [
   { path: '', component: MainComponent},
   { path: 'imprint' , component: ImprintComponent },
   { path: 'data-protection' , component: DataProtectionComponent },
-  { path: 'projects' , component: ProjectsComponent },
+  { path: 'projects' , component: ProjectsComponent},
   { path: 'story' , component: StoryComponent },
   { path: 'person' , component: PersonComponent },
   { path: 'contact' , component: ContactComponent },

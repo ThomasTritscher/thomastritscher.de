@@ -1,9 +1,32 @@
 import { getTranslationDeclStmts } from '@angular/compiler/src/render3/view/template';
 import { Component, OnInit } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+  } from '@angular/animations';
+
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+  animations: [
+    trigger('enter',[
+      transition(':enter', [
+        style({ opacity: 1 }),
+        animate('2.5s', style({ opacity: 0}))
+      ]),
+    ]),
+    trigger('leave',[
+      transition(':leave', [
+        style({ opacity: 1 }),
+        animate('3.5s', style({ opacity: 0}))
+      ])
+    ])
+  ]
 })
 export class ProjectsComponent implements OnInit {
   translate = 'translate3d(0px, 0%, 0px)';
