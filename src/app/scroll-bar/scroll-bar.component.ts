@@ -7,12 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScrollBarComponent implements OnInit {
   
-  
-  translateValue = 'translate(0px, 0px, 0px)'
-
+  translateValue = 'translate3d(0px, 0%, 0px)';
+  offSet = 0;
   constructor() { }
-
   ngOnInit(): void {
+    window.addEventListener("wheel", (event: any) => {
+      console.log("SCROLLING");
+      if (event.deltaY < 0) {
+        console.log('scrolling up');
+        this.offSet++;
+      } else if (event.deltaY > 0) {
+        console.log('scrolling down');
+        this.offSet--;
+      }
+      this.scroll();
+    });
   }
-
+  scroll() {
+    this.translateValue = `translate3d(0px, ${this.offSet}%, 0px)`;
+    
+  }
 }
+  
+ 
+
+ 
+

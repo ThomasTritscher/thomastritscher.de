@@ -18,8 +18,12 @@
   align-self     : flex-start;
   transition     : all .3s ease-in-out;
   background     : #d3d3d3;
+
+&:nth-child(2n){
+  align-self: flex-end;
 }
 
+}
 
 .project-text-content {
   position: absolute;
