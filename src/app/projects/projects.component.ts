@@ -19,6 +19,12 @@ import {
         animate('2.5s ease-in', style({ opacity: 0}))
       ]),
     ]),
+    trigger('fadeIn',[
+      transition(':enter', [
+        style({transform: "translateY(100px)", opacity: 0}),
+        animate('1.2s cubic-bezier(.29,.71,.33,.88)', style({ transform: "translateY(0)", opacity: 1})),
+      ]),
+    ]),
   ]
 })
 export class ProjectsComponent implements OnInit {

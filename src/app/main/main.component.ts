@@ -6,7 +6,6 @@ import { TransformBGService } from '../services/transform-bg.service';
 import { TransitionBgService } from '../services/transition-bg.service';
 import {
 trigger,
-state,
 style,
 animate,
 transition
@@ -18,18 +17,14 @@ transition
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
-  // animations: [
-  //   trigger('fadeIn',[
-  //     transition(':enter', [
-  //       style({ opacity: 0 }),
-  //       animate('2.5s', style({ opacity: 1}))
-  //     ]),
-  //     // transition(':leave', [
-  //     //   style({ opacity: 1 }),
-  //     //   animate('2.5s', style({ opacity: 0}))
-  //     // ])
-  //   ])
-  // ]
+  animations: [
+    trigger('load',[
+      transition(':enter', [
+        style({ opacity: 1 }),
+        animate('2.5s ease-in-out', style({ opacity: 0}))
+      ]),
+    ]),
+  ]
 })
 
 export class MainComponent implements OnInit {

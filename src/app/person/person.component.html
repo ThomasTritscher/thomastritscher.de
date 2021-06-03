@@ -4,38 +4,42 @@
   </div>
   <div class="wrapper">
     <div class="scroll-container">
-      <div class="scroll-content" [ngStyle]="{'transfomr' : defaultTranslate }">
+      <div class="scroll-content">
         <div class="wrapper_inner">
           <hr class="spacer100">
           <section>
-              <h1 class="person-headline-wrapper">
-               person
-              </h1>
-              <div class="column-left column50">
-                <figure class="img_person fadeIn show">
-                  <picture>
-                    <img src="/assets/img/work1.png" alt="">
-                  </picture>
-                </figure>
-              </div>
-              <article class="column-right column50 fadeIn show">
-                <p class="content-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eius deserunt esse quae possimus tempore quia nostrum commodi asperiores culpa, amet officiis numquam vitae voluptatibus sunt aperiam veritatis repellendus ipsa!
-                </p>
-              </article>
-              <figure class="img_person column50 column-left fadeIn show">
+            <h1 class="person-headline-wrapper">
+              person
+            </h1>
+            <div class="column-left column50">
+              <figure @fadeIn class="img_person ">
                 <picture>
-                  <img src="/assets/img/img.jpg" alt="">
+                  <img src="/assets/img/work1.png" alt="">
                 </picture>
               </figure>
-              <article class="column-right column50 fadeIn show">
-                <p class="content-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eius deserunt esse quae possimus tempore quia nostrum commodi asperiores culpa, amet officiis numquam vitae voluptatibus sunt aperiam veritatis repellendus ipsa!
-                </p>
-              </article>
-              <hr class="spacer100">
+            </div>
+            <article @fadeIn class="column-right column50">
+              <p class="content-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eius deserunt esse quae possimus tempore
+                quia nostrum commodi asperiores culpa, amet officiis numquam vitae voluptatibus sunt aperiam veritatis
+                repellendus ipsa!
+              </p>
+            </article>
+            <figure @fadeIn class="img_person column50 column-left">
+              <picture>
+                <img src="/assets/img/img.jpg" alt="">
+              </picture>
+            </figure>
+            <article class="column-right column50 fadeIn show">
+              <p class="content-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga eius deserunt esse quae possimus tempore
+                quia nostrum commodi asperiores culpa, amet officiis numquam vitae voluptatibus sunt aperiam veritatis
+                repellendus ipsa!
+              </p>
+            </article>
+            <hr class="spacer100">
           </section>
-          <section class="fadeIn show">
+          <section @fadeIn>
             <div class="column-left">
               <h2 class="h2-default">Let`s call it capabilites</h2>
             </div>
@@ -58,4 +62,5 @@
       </div>
     </div>
   </div>
+  <div @fadeInOut class="transition-bg"></div>
 </div>
