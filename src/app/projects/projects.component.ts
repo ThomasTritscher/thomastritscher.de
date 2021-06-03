@@ -2,7 +2,6 @@ import { getTranslationDeclStmts } from '@angular/compiler/src/render3/view/temp
 import { Component, OnInit } from '@angular/core';
 import {
   trigger,
-  state,
   style,
   animate,
   transition
@@ -14,18 +13,12 @@ import {
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   animations: [
-    trigger('enter',[
+    trigger('fadeInOut',[
       transition(':enter', [
         style({ opacity: 1 }),
-        animate('2.5s', style({ opacity: 0}))
+        animate('2.5s ease-in', style({ opacity: 0}))
       ]),
     ]),
-    trigger('leave',[
-      transition(':leave', [
-        style({ opacity: 1 }),
-        animate('3.5s', style({ opacity: 0}))
-      ])
-    ])
   ]
 })
 export class ProjectsComponent implements OnInit {
