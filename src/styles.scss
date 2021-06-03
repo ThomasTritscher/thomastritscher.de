@@ -84,14 +84,38 @@ ul {
   overflow: auto;
 }
 
+.wrapper {
+  @media only screen and (max-width: 700px) {
+    width : 100vw;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 500px) {
+    width    : 85vw;
+    max-width: 1200px;
+    height   : auto;
+    margin   : 0 auto;
+  }
+}
+
 .wrapper_inner {
   display : block;
   padding : 100px 0 0;
   overflow: hidden;
+
+  @media only screen and (max-width: 770px) {
+    padding: 0;
+    display: block;
+  }
 }
 
 .project-header {
   margin-bottom: 100px;
+
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 40px;
+  }
+
 }
 
 .project-headline-wrapper {
@@ -101,6 +125,18 @@ ul {
   line-height   : 7vw;
   letter-spacing: -.2vw;
   margin        : 0 0 5vw;
+
+  @media only screen and (max-width: 700px) {
+    font-size  : 10.6vw;
+    line-height: 12vw;
+    margin     : 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size  : 17.6vw;
+    line-height: 18vw;
+    margin     : 0;
+  }
 }
 
 //page header
@@ -113,6 +149,17 @@ ul {
   font-size  : 1.8vw;
   font-weight: 300;
   color      : #a0a0a0;
+
+  @media only screen and (max-width: 700px) {
+    font-size  : 3.5vw;
+    font-weight: 300;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size  : 4.8vw;
+    font-weight: 300;
+    line-height: 8vw;
+  }
 }
 
 .project-description-content {}
@@ -130,9 +177,6 @@ hr {
 .spacer100 {
   height: 100px;
 
-  @media only screen and (max-width: 500px) {
-    display: none;
-  }
 }
 
 .spacer300 {
@@ -157,7 +201,7 @@ hr {
   left          : 0;
   background    : var(--accentcolor);
   z-index       : 10000;
-  opacity: 0;
+  opacity       : 0;
   pointer-events: none;
- 
+
 }

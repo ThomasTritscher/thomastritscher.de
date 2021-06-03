@@ -11,6 +11,10 @@
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: 0.1s;
+
+  @media only screen and (max-width: 770px) {
+    display: none;
+  }
 }
 
 .cursor2 {

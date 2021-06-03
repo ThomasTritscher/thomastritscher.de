@@ -36,13 +36,13 @@
 }
 
 .section-image-one {
-  width: 80%;
-  margin: 0 auto;
+  width     : 80%;
+  margin    : 0 auto;
   align-self: center;
 
   img {
     width: 100%;
-   
+
     @media only screen and (max-width: 770px) {
       height: 38vh;
     }
@@ -54,8 +54,8 @@
   }
 
   @media only screen and (max-width: 770px) {
-    max-width  : 90vw;
-   
+    max-width: 90vw;
+
   }
 
   @media only screen and (max-width: 500px) {
@@ -72,16 +72,21 @@
 
 
   img {
-    width: 100%;
+    width : 100%;
     filter: grayscale(60%);
 
 
     @media only screen and (max-width: 770px) {
-      height: 38vh;
+      margin-left: 32px;
+      padding    : 32px;
     }
 
     @media only screen and (max-width: 500px) {
-      height: 26vh;
+      height   : 26vh;
+      max-width: 88vw;
+
+      padding    : 0px;
+      margin-left: 0px;
 
     }
 
@@ -89,7 +94,7 @@
 
   @media only screen and (max-width: 770px) {
     max-width: 90vw;
-    height   : 38vh;
+
 
   }
 
