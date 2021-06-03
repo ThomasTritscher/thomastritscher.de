@@ -129,6 +129,10 @@ hr {
 
 .spacer100 {
   height: 100px;
+
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 .spacer300 {

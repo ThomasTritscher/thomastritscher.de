@@ -22,7 +22,7 @@
       </span>
     </h1>
   </section>
-  <section class="h h-social-media  h-theme-dark" [ngStyle]="{'zIndex' : z_inactive}">
+  <section class="h h-social-media  h-theme-dark " [ngStyle]="{'zIndex' : z_inactive}">
     <div class="content-wrapper">
       <div class="p-wrap">
         <div class="content-a" [ngStyle]="{'transform' : secondText}">
@@ -31,7 +31,7 @@
       </div>
       <div class="p-wrap">
         <div class="content-a" [ngStyle]="{'transform' : secondText}">
-          <p>
+          <p class="hover_state">
             <a href="">Twitter</a>
           </p>
         </div>
@@ -110,4 +110,6 @@
       </div>
     </div>
   </section>
+  <div #cursor class="cursor"></div>
+  <div #cursor2 class="cursor2"></div>
 </div>

@@ -43,6 +43,8 @@ export class MainComponent implements OnInit {
     });
   }
 
+  //End cursor follower
+
 
   counter = 0;
   startWheel!: number;
