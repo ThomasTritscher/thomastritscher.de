@@ -1,7 +1,7 @@
 .scrollbar-track {
   position           : absolute;
   opacity            : 0;
-  z-index            : 1;
+  z-index            : 10;
   background         : rgba(222, 222, 222, .75);
   -webkit-user-select: none;
   -moz-user-select   : none;
