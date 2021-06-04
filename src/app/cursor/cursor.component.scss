@@ -1,7 +1,7 @@
 
 .cursor {
   position: fixed;
-  z-index: 99;
+  z-index: 10;
   width: 50px;
   height: 50px;
   border: 2px solid var(--accentcolor);
@@ -10,7 +10,7 @@
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.1s;
+  transition: all .4s ease-in-out;
 
   @media only screen and (max-width: 770px) {
     display: none;
@@ -21,13 +21,16 @@
   position: fixed;
   width: 8px;
   height: 8px;
-  background-color: #c6c6c6;
+  background-color: var(--dividertext);
   border-radius: 50%;
   left: 0;
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.15s;
+  transition: all .6s ease-in-out;
+  @media only screen and (max-width: 770px) {
+    display: none;
+  }
 }
 
 

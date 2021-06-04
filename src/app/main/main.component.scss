@@ -71,20 +71,23 @@
   position: fixed;
   width: 8px;
   height: 8px;
-  background-color: #c6c6c6;
+  background-color: var(--dividertext);
   border-radius: 50%;
   left: 0;
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: all .4s ease-in-out;
+  transition: all .6s ease-in-out;
+  @media only screen and (max-width: 770px) {
+    display: none;
+  }
 }
 
 
 .hover_state:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(2.5);
   background-color: var(--accentcolor);
-  opacity: 0.8;
+  opacity: 0.7;
 
 }
 

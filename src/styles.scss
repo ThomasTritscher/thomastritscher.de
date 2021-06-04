@@ -82,10 +82,15 @@ ul {
   width   : 100vw;
   height  : 100vh;
   overflow: auto;
+
+  @media only screen and (max-width: 500px){
+        height: auto;
+        
+  }
 }
 
 .wrapper {
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 770px) {
     width : 100vw;
     height: auto;
   }
@@ -114,6 +119,7 @@ ul {
 
   @media only screen and (max-width: 500px) {
     margin-bottom: 40px;
+    padding: 0;
   }
 
 }
