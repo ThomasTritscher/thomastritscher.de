@@ -10,6 +10,10 @@ export class TransformBGService {
 
   constructor() {}
 
+  startBg() {
+    this.valueBg = 'translate(' + -30 + '%)';
+  }
+
   switchBgToZero() {
     this.valueBg = 'translate(' + -100 + '%)';
   }

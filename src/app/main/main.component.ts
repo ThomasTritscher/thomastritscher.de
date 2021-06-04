@@ -5,10 +5,10 @@ import { LayerChangeService } from '../services/layer-change.service';
 import { TransformBGService } from '../services/transform-bg.service';
 import { TransitionBgService } from '../services/transition-bg.service';
 import {
-trigger,
-style,
-animate,
-transition
+  trigger,
+  style,
+  animate,
+  transition
 } from '@angular/animations';
 
 
@@ -18,10 +18,10 @@ transition
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
   animations: [
-    trigger('load',[
+    trigger('load', [
       transition(':enter', [
         style({ opacity: 1 }),
-        animate('2.5s ease-in-out', style({ opacity: 0}))
+        animate('2.5s ease-in-out', style({ opacity: 0 }))
       ]),
     ]),
   ]
@@ -47,59 +47,42 @@ export class MainComponent implements OnInit {
 
 
   counter = 0;
-  startWheel!: number;
+  // startWheel!: number;
 
   constructor(public transformBg: TransformBGService, public layer: LayerChangeService, public translate: TransitionBgService) { }
 
   ngOnInit(): void {
     window.addEventListener("wheel", (event: any) => {
-
-      if (this.startWheel === undefined) {
-        this.startWheel = event.timeStamp;
-      }
-      let elapse = Math.trunc(event.timeStamp - this.startWheel);
-
-
-      if (elapse > 300) {
-        this.startWheel = event.timeStamp;
+      console.log(this.counter);
+      if (event.deltaY < 0) {
+        console.log('scrolling up');
+        this.counter--;
+      } else if (event.deltaY > 0) {
+        console.log('scrolling down');
         this.counter++;
-        console.log(this.counter);
-
+        
       }
 
       if (this.counter < 2) {
-        this.transformBg.switchBgToZero();
-        this.layer.firstWheelEvent();
-      }
-
-      if (this.counter == 2) {
-        this.layer.secondWheelEvent();
-      }
-
-      if (this.counter == 3) {
-        this.layer.thirdWheelEvent();
-        this.transformBg.switchBgToFull();
-      }
-      // if(this.counter > 3){
-      //   this.layer.secondWheelEvent();
-      //   this.transformBg.switchBgToZero();
-      // }
-
+              this.transformBg.switchBgToZero();
+              this.layer.firstWheelEvent();
+            }
+      
+            if (this.counter == 2) {
+              this.layer.secondWheelEvent();
+            }
+      
+            if (this.counter == 3) {
+              this.layer.thirdWheelEvent();
+              this.transformBg.switchBgToFull();
+            }
+            if (this.counter == 4 ) {
+               this.counter = 0;
+               this.transformBg.startBg();
+               this.layer.backToStartScreen();
+            }
+  
     });
-    // window.addEventListener("wheel", (event: any) => {
-    //   if (event.deltaY < 0) {
-    //     console.log('scrolling up');
-
-
-
-    //   } else if (event.deltaY > 0) {
-    //     console.log('scrolling down');
-    //     this.transformBg.switchBgToZero();
-    //     this.layer.firstWheelEvent();
-
-
-    //   }
-
-    // });
   }
 }
+

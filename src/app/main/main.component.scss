@@ -87,7 +87,8 @@
 .hover_state:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(2.5);
   background-color: var(--accentcolor);
-  opacity: 0.7;
+  opacity: 0.8;
+  z-index: 6;
 
 }
 
