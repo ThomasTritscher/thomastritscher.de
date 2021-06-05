@@ -10,7 +10,6 @@ import { MainComponent } from './main/main.component';
 import { OuterFrameComponent } from './outer-frame/outer-frame.component';
 import { SectionsComponent } from './sections/sections.component';
 import { ScrollhintComponent } from './scrollhint/scrollhint.component';
-import { ProjectGridComponent } from './project-grid/project-grid.component';
 import { HNavComponent } from './h-nav/h-nav.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
@@ -33,7 +32,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     OuterFrameComponent,
     SectionsComponent,
     ScrollhintComponent,
-    ProjectGridComponent,
     HNavComponent,
     ProjectsComponent,
     ContactComponent,

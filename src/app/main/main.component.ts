@@ -46,10 +46,10 @@ export class MainComponent implements OnInit {
   //End cursor follower
 
 
-  counter = 0;
-  // startWheel!: number;
 
   constructor(public transformBg: TransformBGService, public layer: LayerChangeService, public translate: TransitionBgService) { }
+
+  counter = 0;
 
   ngOnInit(): void {
     window.addEventListener("wheel", (event: any) => {
@@ -81,6 +81,9 @@ export class MainComponent implements OnInit {
                this.transformBg.startBg();
                this.layer.backToStartScreen();
             }
+            if (this.counter < 0 ) {
+              this.counter = 0;
+           }
   
     });
   }
