@@ -24,7 +24,7 @@ body {
   font-family           : 'Montserrat', sans-serif;
   font-size             : 16px;
   font-weight           : 300;
-  color                 : #585858;
+  color                 : var(--secondarytext);
   margin                : 0;
   padding               : 0;
   -webkit-font-smoothing: antialiased;
@@ -46,6 +46,7 @@ section {
     margin   : 0 auto;
     padding  : 0 70px;
   }
+
   @media only screen and (max-width: 500px) {
     padding: 0px 30px;
   }
@@ -86,9 +87,9 @@ ul {
   height  : 100vh;
   overflow: auto;
 
-  @media only screen and (max-width: 500px){
-        height: auto;
-        
+  @media only screen and (max-width: 500px) {
+    height: auto;
+
   }
 }
 
@@ -124,14 +125,11 @@ ul {
     margin-bottom: 30px;
   }
 
-  @media only screen and (max-width: 500px) {
-    
-  }
 
 }
 
 .project-headline-wrapper {
-  color         : #585858;
+  color         : var(--secondarytext);
   font-size     : 6vw;
   font-weight   : 500;
   line-height   : 7vw;
@@ -153,16 +151,10 @@ ul {
 
 //page header
 
-.project-headline-content {
- 
-}
-
-
-
 .project-description-wrapper {
   font-size  : 1.8vw;
   font-weight: 300;
-  color      : #a0a0a0;
+  color      : var(--nativegrey);
 
   @media only screen and (max-width: 700px) {
     font-size  : 3.5vw;
@@ -175,9 +167,6 @@ ul {
     line-height: 8vw;
   }
 }
-
-.project-description-content {}
-
 
 // space classes
 
@@ -201,9 +190,13 @@ hr {
 
 //font-stlyes
 
+h2 {
+  color: var(--primarytext);
+}
+
 .outlined {
-  color              : #fff;
-  -webkit-text-stroke: 1px #585858;
+  color              : var(--text_icons);
+  -webkit-text-stroke: 1px var(--secondarytext);
 }
 
 //transition Background
