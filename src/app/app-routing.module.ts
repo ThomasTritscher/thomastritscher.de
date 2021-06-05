@@ -6,14 +6,14 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MainComponent } from './main/main.component';
 import { PersonComponent } from './person/person.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { StoryComponent } from './story/story.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full',  component: MainComponent},
   { path: 'imprint' , component: ImprintComponent },
   { path: 'data-protection' , component: DataProtectionComponent },
   { path: 'projects' , component: ProjectsComponent},
-  { path: 'story' , component: StoryComponent},
+  { path: 'skills' , component: SkillsComponent},
   { path: 'person' , component: PersonComponent},
   { path: 'contact', component: ContactComponent},
 

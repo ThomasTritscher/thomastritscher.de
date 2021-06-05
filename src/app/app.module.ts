@@ -13,11 +13,11 @@ import { ScrollhintComponent } from './scrollhint/scrollhint.component';
 import { HNavComponent } from './h-nav/h-nav.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-import { StoryComponent } from './story/story.component';
 import { PersonComponent } from './person/person.component';
 import { CursorComponent } from './cursor/cursor.component';
 import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -35,10 +35,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HNavComponent,
     ProjectsComponent,
     ContactComponent,
-    StoryComponent,
     PersonComponent,
     CursorComponent,
     ScrollBarComponent,
+    SkillsComponent
    
     
 

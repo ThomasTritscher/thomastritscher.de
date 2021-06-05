@@ -8,8 +8,8 @@ import {
 
 @Component({
   selector: 'app-story',
-  templateUrl: './story.component.html',
-  styleUrls: ['./story.component.scss'],
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss'],
   animations: [
     trigger('fadeInOut',[
       transition(':enter', [
@@ -25,7 +25,7 @@ import {
     ]),
   ]
 })
-export class StoryComponent implements OnInit {
+export class SkillsComponent implements OnInit {
 
 
 
