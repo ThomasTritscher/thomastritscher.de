@@ -24,8 +24,7 @@ export class ContactComponent implements OnInit {
 
   //End cursor follower
 
-  counter = 0;
-  startWheel!: number;
+
 
   //var for Layers
   z_active = 9;
@@ -40,27 +39,22 @@ export class ContactComponent implements OnInit {
   fourthText = 'translate3d(0px, -145%, 0px)';
 
   defaultImgPosition = 'translate3d(0px, -600px, 0px)';
-
-
+  counter = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+
     window.addEventListener("wheel", (event: any) => {
-
-      if (this.startWheel === undefined) {
-        this.startWheel = event.timeStamp;
-      }
-      let elapse = Math.trunc(event.timeStamp - this.startWheel);
-
-
-      if (elapse > 300) {
-        this.startWheel = event.timeStamp;
+      console.log(this.counter);
+      if (event.deltaY < 0) {
+        console.log('scrolling up');
+        this.counter--;
+      } else if (event.deltaY > 0) {
+        console.log('scrolling down');
         this.counter++;
-        console.log(this.counter);
 
       }
-
       if (this.counter < 2) {
         this.firstWheelEvent();
       }
@@ -71,14 +65,29 @@ export class ContactComponent implements OnInit {
 
       if (this.counter == 3) {
         this.thirdWheelEvent();
-
+        
       }
-      // if(this.counter > 3){
-      //   this.layer.secondWheelEvent();
-      //   this.transformBg.switchBgToZero();
-      // }
+      if (this.counter == 4) {
+        this.counter = 0;
+        this.startScreen();
+    
+      }
 
+
+      
+     
+      
     });
+  }
+
+  startScreen() {
+    this.firstText = 'translate3d(0px, 0%, 0px)';
+    this.secondText = 'translate3d(0px, -145%, 0px)';
+    this.thirdText = 'translate3d(0px, -145%, 0px)';
+    this.fourthText = 'translate3d(0px, -145%, 0px)';
+
+    this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
+
   }
 
   firstWheelEvent() {
@@ -94,7 +103,7 @@ export class ContactComponent implements OnInit {
     this.secondText = 'translate3d(0px, -145%, 0px)';
     this.thirdText = 'translate3d(0px, 0%, 0px)';
     this.defaultImgPosition = 'translate3d(0px, 0px, 0px)';
-   
+
   }
   thirdWheelEvent() {
     this.z_inactive2 = 0;
@@ -102,7 +111,7 @@ export class ContactComponent implements OnInit {
     this.thirdText = 'translate3d(0px, -145%, 0px)';
     this.fourthText = 'translate3d(0px, 0%, 0px)';
     this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
-    
+
   }
 
 
