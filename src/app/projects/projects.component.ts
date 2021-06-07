@@ -1,11 +1,12 @@
 import { getTranslationDeclStmts } from '@angular/compiler/src/render3/view/template';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import {
   trigger,
   style,
   animate,
   transition
   } from '@angular/animations';
+
 
 
 @Component({
@@ -27,25 +28,33 @@ import {
     ]),
   ]
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit{
   translate = 'translate3d(0px, 0px, 0px)';
   offSet = 0;
   value = 100;
+
   constructor() { }
+
   ngOnInit(): void {
     window.addEventListener("wheel", (event: any) => {
       console.log("SCROLLING");
       if (event.deltaY < 0) {
         console.log('scrolling up');
+        
         this.offSet += this.value;
       } else if (event.deltaY > 0) {
         console.log('scrolling down');
-        this.offSet -= this.value;
+        this.offSet -= this.value; 
       }
       this.scroll();
+      
     });
+    
   }
   scroll() {
     this.translate = `translate3d(0px, ${this.offSet}px, 0px)`;
+    
   }
+  
 }
+
