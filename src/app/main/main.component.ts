@@ -92,6 +92,7 @@ export class MainComponent implements OnInit {
         this.counter = 0;
       }
     });
+  
   }
 }
 
