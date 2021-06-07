@@ -48,6 +48,11 @@
   z-index : 2;
   right   : 2vw;
   bottom  : 1vw;
+
+  @media only screen and (max-width: 500px) {
+    right: 1vw;
+    bottom: -1vw;
+  }
 }
 
 .project-number {
@@ -61,6 +66,10 @@
   font-weight: 500;
   margin     : 0 0 5px;
   color      : #fff;
+
+  @media only screen and (max-width: 770px) {
+    font-size  : 3vw;
+  }
 
 
   @media only screen and (max-width: 500px) {
@@ -110,5 +119,16 @@ figure {
   img {
     width: 10vw;
   }
+
+  @media only screen and (max-width: 770px) {
+    top: 140px;
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    top: 58px;
+    right: -4vw;
+  }
+  
 
 }
