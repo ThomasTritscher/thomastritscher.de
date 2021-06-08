@@ -1,7 +1,35 @@
+.scoll-container {
+  @media only screen and (max-width: 500px) {
+    height: 100vh;
+  }
+
+}
+
+.content-text {
+
+  @media only screen and (max-width: 770px) {
+    font-size: 2.4vw !important;
+  }
+
+}
+
 .person-headline-wrapper {
   font-size: 9.6vw;
   margin   : 0 0 100px -3vw;
+
+  @media only screen and (max-width: 770px) {
+    margin: 0px 0 50px 0vw;
+  }
 }
+
+.spacer100_2 {
+  height: 100px;
+
+  @media only screen and (max-width: 770px) {
+    display: none;
+  }
+}
+
 
 .column-left {
   float: left;
@@ -10,6 +38,10 @@
 .column50 {
   width  : 50%;
   padding: 0 20px;
+
+  @media only screen and (max-width: 770px) {
+    padding: 0 10px;
+  }
 }
 
 .column-right {
@@ -34,6 +66,10 @@ figure {
 
 .h2-default {
   font-size: 2vw;
+
+  @media only screen and (max-width: 770px) {
+    font-size: 3vw;
+  }
 }
 
 .list-default {
@@ -45,6 +81,10 @@ figure {
 .list_item-default {
   font-size: 1.2vw;
   margin   : 0;
+
+  @media only screen and (max-width: 770px) {
+    font-size: 4.2vw;
+  }
 }
 
 .fadeIn {
@@ -61,11 +101,12 @@ figure {
 
 @keyframes fade-in-from-bottom {
   0% {
-    opacity: 0;
+    opacity  : 0;
     transform: translateY(100px);
   }
+
   100% {
-    opacity: 1;
+    opacity  : 1;
     transform: translateY(0px);
 
   }
