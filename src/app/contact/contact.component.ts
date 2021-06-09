@@ -56,28 +56,34 @@ export class ContactComponent implements OnInit {
         this.counter++;
 
       }
-      if (this.counter < 2) {
-        this.firstWheelEvent();
-      }
+      setTimeout(() => {
+        if (this.counter < 2) {
+          this.firstWheelEvent();
+        }
+      },500);
+      setTimeout(() => {
+        if (this.counter == 2) {
+          this.secondWheelEvent();
+        }
+      },500);
 
-      if (this.counter == 2) {
-        this.secondWheelEvent();
-      }
+      setTimeout(() => {
+        if (this.counter == 3) {
+          this.thirdWheelEvent();
+        }
+      },500);
 
-      if (this.counter == 3) {
-        this.thirdWheelEvent();
-        
-      }
-      if (this.counter == 4) {
+      setTimeout(() => {
+        if (this.counter > 3) {
+          this.counter = 0;
+          this.startScreen();
+        }
+      },500);
+
+      if (this.counter < 0) {
         this.counter = 0;
-        this.startScreen();
-    
       }
 
-
-      
-     
-      
     });
   }
 
@@ -94,25 +100,37 @@ export class ContactComponent implements OnInit {
   firstWheelEvent() {
     this.z_active = 0;
     this.z_inactive = 9;
+    this.z_inactive2 = 0;
+    this.z_inactive3 = -1;
     this.firstText = 'translate3d(0px, -145%, 0px)';
     this.secondText = 'translate3d(0px, 0%, 0px)';
+    this.thirdText = 'translate3d(0px, -145%, 0px)';
+    this.fourthText = 'translate3d(0px, -145%, 0px)';
+    this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
 
   }
   secondWheelEvent() {
+    this.z_active = 0;
     this.z_inactive = 0;
     this.z_inactive2 = 9;
+    this.z_inactive3 = -1;
+    this.firstText = 'translate3d(0px, -145%, 0px)';
     this.secondText = 'translate3d(0px, -145%, 0px)';
     this.thirdText = 'translate3d(0px, 0%, 0px)';
+    this.fourthText = 'translate3d(0px, -145%, 0px)';
     this.defaultImgPosition = 'translate3d(0px, 0px, 0px)';
 
   }
   thirdWheelEvent() {
+    this.z_active = 0;
+    this.z_inactive = 0;
     this.z_inactive2 = 0;
     this.z_inactive3 = 9;
+    this.firstText = 'translate3d(0px, -145%, 0px)';
+    this.secondText = 'translate3d(0px, -145%, 0px)';
     this.thirdText = 'translate3d(0px, -145%, 0px)';
     this.fourthText = 'translate3d(0px, 0%, 0px)';
     this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
-
   }
 
 

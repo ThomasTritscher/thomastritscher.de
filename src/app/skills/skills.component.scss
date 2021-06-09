@@ -92,16 +92,16 @@ ul {
 }
 
 .show-right {
-  -webkit-animation          : fade-in-from-right 1.2s cubic-bezier(.29, .71, .33, .88);
-  animation                  : fade-in-from-right 1.2s cubic-bezier(.29, .71, .33, .88);
+  -webkit-animation          : fade-in-from-right 1.2s 1.2s cubic-bezier(.29, .71, .33, .88);
+  animation                  : fade-in-from-right 1.2s 1.2s cubic-bezier(.29, .71, .33, .88);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode        : forwards;
 
 }
 
 .show-left {
-  -webkit-animation          : fade-in-from-left 1.2s cubic-bezier(.29, .71, .33, .88);
-  animation                  : fade-in-from-left 1.2s cubic-bezier(.29, .71, .33, .88);
+  -webkit-animation          : fade-in-from-left 1.2s 1.2s cubic-bezier(.29, .71, .33, .88);
+  animation                  : fade-in-from-left 1.2s 1.2s cubic-bezier(.29, .71, .33, .88);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode        : forwards;
 
