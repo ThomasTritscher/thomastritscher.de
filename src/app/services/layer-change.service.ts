@@ -43,38 +43,38 @@ export class LayerChangeService {
   constructor() { }
 
   backToStartScreen() {
-  this.z_active = 9;
-  this.z_inactive = 0;
-  this.o_active = 1;
-  this.o_inactive = 0;
-  this.z_inactive2 = 0;
-  this.o_inactive2 = 0;
-  this.z_inactive3 = 0;
-  this.o_inactive3 = 0;
-  this.o_img_w = 0;
+    this.z_active = 9;
+    this.z_inactive = 0;
+    this.o_active = 1;
+    this.o_inactive = 0;
+    this.z_inactive2 = 0;
+    this.o_inactive2 = 0;
+    this.z_inactive3 = 0;
+    this.o_inactive3 = 0;
+    this.o_img_w = 0;
 
-  // var for curtain
-  this.translateCurtainMinus = 'translate(' + -49 + '%)';
-  this.translateCurtainPlus = 'translate(' + +49 + '%)';
+    // var for curtain
+    this.translateCurtainMinus = 'translate(' + -49 + '%)';
+    this.translateCurtainPlus = 'translate(' + +49 + '%)';
 
-  // var for text
-  this.firstText = 'translate3d(0px, 0%, 0px)';
-  this.secondText = 'translate3d(0px, -250%, 0px)';
-  this.thirdText = 'translate3d(0px, -250%, 0px)';
-  this.fourthText = 'translate3d(0px, -250%, 0px)';
+    // var for text
+    this.firstText = 'translate3d(0px, 0%, 0px)';
+    this.secondText = 'translate3d(0px, -250%, 0px)';
+    this.thirdText = 'translate3d(0px, -250%, 0px)';
+    this.fourthText = 'translate3d(0px, -250%, 0px)';
 
-  // var for scrollthint bar
-  this.default_length = 'translate(' + -30 + '%)';
-  this.default_length1 = 'translate(' + 0 + '%)';
-  this.default_length2 = 'translate(' + 0 + '%)';
-  this.default_length3 = 'translate(' + 0 + '%)';
-  this.runout = 'translateY(' + 0 + '%)';
+    // var for scrollthint bar
+    this.default_length = 'translate(' + -30 + '%)';
+    this.default_length1 = 'translate(' + 0 + '%)';
+    this.default_length2 = 'translate(' + 0 + '%)';
+    this.default_length3 = 'translate(' + 0 + '%)';
+    this.runout = 'translateY(' + 0 + '%)';
 
-  // var for h-nav
-  this.navPoint_text = 'translate3d(0px, 0%, 0px)';
-  this.navPoint_text1 = 'translate3d(0px, 0%, 0px)';
+    // var for h-nav
+    this.navPoint_text = 'translate3d(0px, 0%, 0px)';
+    this.navPoint_text1 = 'translate3d(0px, 0%, 0px)';
 
-  this.img_opacity = 1;
+    this.img_opacity = 1;
   }
 
   firstWheelEvent() {
@@ -103,18 +103,22 @@ export class LayerChangeService {
     this.switchLayer3Opacity();
     this.translateText3();
     this.translateScrollhintBar3();
-    this.changeNav3(); 
+    this.changeNav3();
   }
-  
+
   //first wheel event
   switchLayerZIndex() {
     this.z_active = 0;
     this.z_inactive = 9;
+    this.z_inactive2 = 0;
+    this.z_inactive3 = 0;
   }
   switchLayerOpacity() {
     this.o_active = 0;
     this.o_inactive = 1;
     this.o_img_w = 1;
+    this.o_inactive2 = 0;
+    this.o_inactive3 = 0;
   }
   translateCurtain() {
     this.translateCurtainMinus = 'translate(' + -100 + '%)';
@@ -122,19 +126,27 @@ export class LayerChangeService {
   }
   translateText() {
     this.secondText = 'translate3d(0px, 0%, 0px)';
+    this.firstText = 'translate3d(0px, 0%, 0px)';
+    this.thirdText = 'translate3d(0px, -250%, 0px)';
+    this.fourthText = 'translate3d(0px, -250%, 0px)';
   }
   translateScrollhintBar() {
     this.default_length = 'translate(' + 0 + '%)';
     this.default_length1 = 'translate(' + -30 + '%)';
+    this.default_length2 = 'translate(' + 0 + '%)';
+    this.default_length3 = 'translate(' + 0 + '%)';
   }
   //second wheel event
   switchLayer2ZIndex() {
     this.z_inactive = 0;
     this.z_inactive2 = 9;
+    this.z_inactive3 = 0;
   }
   switchLayer2Opacity() {
     this.o_inactive = 0;
     this.o_inactive2 = 1;
+    this.o_inactive3 = 0;
+    this.o_img_w = 9;
   }
   translateCurtainOut() {
     this.translateCurtainMinus = 'translate(' + +100 + '%)';
@@ -143,24 +155,32 @@ export class LayerChangeService {
   translateText2() {
     this.secondText = 'translate3d(0px, -250%, 0px)';
     this.thirdText = 'translate3d(0px, 0%, 0px)';
+    this.fourthText = 'translate3d(0px, -250%, 0px)';
   }
   translateScrollhintBar2() {
+    this.default_length = 'translate(' + 0 + '%)';
     this.default_length1 = 'translate(' + 0 + '%)';
     this.default_length2 = 'translate(' + -30 + '%)';
+    this.default_length3 = 'translate(' + 0 + '%)';
   }
   //third wheel event
-  switchLayer3ZIndex(){
+  switchLayer3ZIndex() {
     this.z_inactive3 = 9;
     this.z_inactive2 = 0;
+    this.z_inactive = 0;
   }
-  switchLayer3Opacity(){
+  switchLayer3Opacity() {
     this.o_img_w = 0;
   }
-  translateText3(){
+  translateText3() {
+    this.firstText = 'translate3d(0px, -250%, 0px)';
+    this.secondText = 'translate3d(0px, -250%, 0px)';
     this.thirdText = 'translate3d(0px, -250%, 0px)';
     this.fourthText = 'translate3d(0px, 0%, 0px)';
   }
-  translateScrollhintBar3(){
+  translateScrollhintBar3() {
+    this.default_length = 'translate(' + 0 + '%)';
+    this.default_length1 = 'translate(' + 0 + '%)';
     this.default_length2 = 'translate(' + 0 + '%)';
     this.default_length3 = 'translate(' + -30 + '%)';
   }
@@ -185,8 +205,8 @@ export class LayerChangeService {
   changeNav3() {
     this.navPoint_text = 'translate3d(0px, -75%, 0px)';
   }
-  changeHImg(){
-    this. img_opacity = 0;
+  changeHImg() {
+    this.img_opacity = 0;
   }
 
 

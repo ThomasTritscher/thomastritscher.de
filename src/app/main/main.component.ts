@@ -72,6 +72,7 @@ export class MainComponent implements OnInit {
       setTimeout(() => {
         if (this.counter == 2) {
           this.layer.secondWheelEvent();
+          this.transformBg.switchBgToZero();
         }
       },500);
       setTimeout(() => {

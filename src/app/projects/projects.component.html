@@ -30,7 +30,7 @@
                 <h3 class="project-title">First HTML & CSS Quiz</h3>
               </div>
               <div class="project-img-wrap">
-                <figure class="img-wrap">
+                <figure @fadeIn class="img-wrap">
                   <picture>
                     <img class="img-wrap-item" src="/assets/img/quiz-640.jpg" alt="">
                   </picture>
@@ -47,7 +47,7 @@
                 <h3 class="project-title">Javascript Game</h3>
               </div>
               <div class="project-img-wrap">
-                <figure class="img-wrap">
+                <figure @fadeIn class="img-wrap">
                   <picture>
                     <img class="img-wrap-item" src="/assets/img/el_pollo_loco_big.png" alt="">
                   </picture>
@@ -64,7 +64,7 @@
                 <h3 class="project-title">Angular card game</h3>
               </div>
               <div class="project-img-wrap">
-                <figure class="img-wrap">
+                <figure @fadeIn class="img-wrap">
                   <picture>
                     <img class="img-wrap-item" src="/assets/img/fire-ring-2091656_640.png" alt="">
                   </picture>
@@ -78,12 +78,12 @@
             <a class="project-preview" href="">
               <div class="project-text-content">
                 <span class="project-number">04</span>
-                <h3 class="project-title">Personal Website</h3>
+                <h3 [style.color]="'black'" class="project-title">Personal Website</h3>
               </div>
               <div class="project-img-wrap">
-                <figure class="img-wrap">
+                <figure @fadeIn class="img-wrap">
                   <picture>
-                    <img class="img-wrap-item" src="/assets/img/homepage_img.jpg"
+                    <img class="img-wrap-item" src="/assets/img/homepage_front.png"
                     alt="">
                   </picture>
                   <span class="hide-bg"></span>
@@ -99,9 +99,26 @@
                 <h3 class="project-title">Task Management App</h3>
               </div>
               <div class="project-img-wrap">
-                <figure class="img-wrap">
+                <figure @fadeIn class="img-wrap">
                   <picture>
-                    <img class="img-wrap-item" src="/assets/img/coming_soon.jpg" alt="">
+                    <img class="img-wrap-item" src="/assets/img/under_construction.jpg"  alt="">
+                  </picture>
+                  <span class="hide-bg"></span>
+                </figure>
+              </div>
+              <div class="project-cta">
+                <img src="/assets/icons/arrow-right-bloodorange.png" alt="">
+              </div>
+            </a>
+            <a class="project-preview" href="">
+              <div class="project-text-content">
+                <span class="project-number">06</span>
+                <h3 class="project-title">Comparison Webapp</h3>
+              </div>
+              <div class="project-img-wrap">
+                <figure @fadeIn class="img-wrap">
+                  <picture>
+                    <img class="img-wrap-item" src="/assets/img/under_construction.jpg" alt="">
                   </picture>
                   <span class="hide-bg"></span>
                 </figure>

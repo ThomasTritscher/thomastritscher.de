@@ -40,6 +40,7 @@ export class ContactComponent implements OnInit {
 
   defaultImgPosition = 'translate3d(0px, -600px, 0px)';
   counter = 0;
+  
 
   constructor() { }
 

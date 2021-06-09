@@ -11,6 +11,6 @@ export class TransitionBgService {
 
   transitionBg() {
     this.transitionOpacity = 1;
-    console.log(this.transitionOpacity)
+    
   }
 }

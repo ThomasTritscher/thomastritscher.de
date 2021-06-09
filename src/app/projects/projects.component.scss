@@ -36,6 +36,10 @@
     }
   }
 
+  @media only screen and (max-width: 770px) {
+    height         : 40vw;
+  }
+
   @media only screen and (max-width: 500px) {
     margin: 0 0 30px;
   }
@@ -49,9 +53,9 @@
   right   : 2vw;
   bottom  : 1vw;
 
-  @media only screen and (max-width: 500px) {
-    right: 1vw;
-    bottom: -1vw;
+  @media only screen and (max-width: 770px) {
+    right: 3vw;
+    bottom: -5vw;
   }
 }
 
@@ -127,8 +131,6 @@ figure {
 
   @media only screen and (max-width: 500px) {
     top: 58px;
-    right: -4vw;
   }
   
-
 }
