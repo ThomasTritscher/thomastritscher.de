@@ -30,16 +30,20 @@ import {
 })
 
 
-export class ProjectsComponent implements OnInit{
+export class ProjectsComponent implements OnInit, AfterViewInit{
   translate = 'translate3d(0px, 0px, 0px)';
   offSet = 0;
   value = 100;
 
-  constructor() { }
+  @ViewChild('scrollContent') scrollContainer!: ElementRef;
 
-  ngOnInit(): void {
+  constructor() { }
+  ngAfterViewInit(): void {
     window.addEventListener("wheel", (event: any) => {
       console.log("SCROLLING");
+      let rect = this.scrollContainer.nativeElement.getBoundingClientRect();
+      console.log(rect);
+
       if (event.deltaY < 0) {
         console.log('scrolling up');
         
@@ -51,8 +55,12 @@ export class ProjectsComponent implements OnInit{
       this.scroll();
       
     });
-    
   }
+
+  ngOnInit(): void {
+ 
+  }
+
   scroll() {
     this.translate = `translate3d(0px, ${this.offSet}px, 0px)`;
     
