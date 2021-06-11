@@ -56,25 +56,33 @@ export class ContactComponent implements OnInit {
         this.counter++;
 
       }
+
       setTimeout(() => {
         if (this.counter < 2) {
-          this.firstWheelEvent();
+          this.startScreen();
         }
       },500);
+
       setTimeout(() => {
         if (this.counter == 2) {
-          this.secondWheelEvent();
+          this.firstWheelEvent();
         }
       },500);
 
       setTimeout(() => {
         if (this.counter == 3) {
+          this.secondWheelEvent();
+        }
+      },500);
+
+      setTimeout(() => {
+        if (this.counter == 4) {
           this.thirdWheelEvent();
         }
       },500);
 
       setTimeout(() => {
-        if (this.counter > 3) {
+        if (this.counter > 5) {
           this.counter = 0;
           this.startScreen();
         }
