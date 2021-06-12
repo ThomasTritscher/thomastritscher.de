@@ -62,45 +62,45 @@ export class MainComponent implements OnInit {
         this.counter++;
 
       }
-      setTimeout(() => {
-        if (this.counter < 2) {
-          this.transformBg.startBg();
-          this.layer.backToStartScreen(); 
-        }
-      },500);
 
-      setTimeout(() => {
-        if (this.counter == 2) {
-          this.transformBg.switchBgToZero();
-          this.layer.firstWheelEvent();
-        }
-      },500);
-     
-      setTimeout(() => {
-        if (this.counter == 3) {
-          this.layer.secondWheelEvent();
-          this.transformBg.switchBgToZero();
-        }
-      },500);
-      setTimeout(() => {
-        if (this.counter == 4) {
-          this.layer.thirdWheelEvent();
-          this.transformBg.switchBgToFull();
-        }
-      },500);
-      setTimeout(() => {
-        if (this.counter > 5) {
-          this.counter = 0;
-          this.transformBg.startBg();
-          this.layer.backToStartScreen();
-        }
-      },500);
+      if (this.counter < 2) {
+        this.transformBg.startBg();
+        this.layer.backToStartScreen();
+      }
+
+
+
+      if (this.counter == 2) {
+        this.transformBg.switchBgToZero();
+        this.layer.firstWheelEvent();
+      }
+
+
+
+      if (this.counter == 3) {
+        this.layer.secondWheelEvent();
+        this.transformBg.switchBgToZero();
+      }
+
+
+      if (this.counter == 4) {
+        this.layer.thirdWheelEvent();
+        this.transformBg.switchBgToFull();
+      }
+
+
+      if (this.counter > 5) {
+        this.counter = 0;
+        this.transformBg.startBg();
+        this.layer.backToStartScreen();
+      }
+
 
       if (this.counter < 0) {
         this.counter = 0;
       }
     });
-  
+
   }
 }
 

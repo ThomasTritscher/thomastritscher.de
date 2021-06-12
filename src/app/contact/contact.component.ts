@@ -47,46 +47,41 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
 
     window.addEventListener("wheel", (event: any) => {
-      console.log(this.counter);
+     
       if (event.deltaY < 0) {
-        console.log('scrolling up');
+        
         this.counter--;
       } else if (event.deltaY > 0) {
-        console.log('scrolling down');
+       
         this.counter++;
 
       }
 
-      setTimeout(() => {
         if (this.counter < 2) {
           this.startScreen();
         }
-      },500);
+      
 
-      setTimeout(() => {
         if (this.counter == 2) {
           this.firstWheelEvent();
         }
-      },500);
+      
 
-      setTimeout(() => {
         if (this.counter == 3) {
           this.secondWheelEvent();
         }
-      },500);
+      
 
-      setTimeout(() => {
         if (this.counter == 4) {
           this.thirdWheelEvent();
         }
-      },500);
+      
 
-      setTimeout(() => {
         if (this.counter > 5) {
           this.counter = 0;
           this.startScreen();
         }
-      },500);
+      
 
       if (this.counter < 0) {
         this.counter = 0;

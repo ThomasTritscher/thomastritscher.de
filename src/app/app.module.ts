@@ -24,6 +24,7 @@ import { SkillsComponent } from './skills/skills.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,16 +41,17 @@ import { SkillsComponent } from './skills/skills.component';
     CursorComponent,
     ScrollBarComponent,
     SkillsComponent,
-    
-   
-    
+
+
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-   
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

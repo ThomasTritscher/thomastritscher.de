@@ -33,7 +33,7 @@ import {
 export class ProjectsComponent implements OnInit, AfterViewInit{
   translate = 'translate3d(0px, 0px, 0px)';
   offSet = 0;
-  value = 100;
+  value = 50;
 
   @ViewChild('scrollContent') scrollContainer!: ElementRef;
 
