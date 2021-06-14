@@ -37,6 +37,8 @@ body {
 }
 
 
+
+
 //main container
 section {
   max-width: 60vw;
@@ -91,7 +93,23 @@ ul {
 
   @media only screen and (max-width: 500px) {
     height: auto;
+  }
 
+  &::-webkit-scrollbar{
+    width: 8px;
+    
+  }
+  &::-webkit-scrollbar-track{
+    background: rgb(189, 189, 189,0.4);
+    ;
+    
+  }
+  &::-webkit-scrollbar-thumb{
+    background: var(--secondarytext);
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-thumb:hover{
+    background: var(--accentcolor ) ;
   }
 }
 

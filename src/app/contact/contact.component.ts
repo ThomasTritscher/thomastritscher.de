@@ -62,22 +62,22 @@ export class ContactComponent implements OnInit {
         }
       
 
-        if (this.counter == 2) {
+        if (this.counter == 5) {
           this.firstWheelEvent();
         }
       
 
-        if (this.counter == 3) {
+        if (this.counter == 8) {
           this.secondWheelEvent();
         }
       
 
-        if (this.counter == 4) {
+        if (this.counter == 11) {
           this.thirdWheelEvent();
         }
       
 
-        if (this.counter > 5) {
+        if (this.counter > 12) {
           this.counter = 0;
           this.startScreen();
         }
