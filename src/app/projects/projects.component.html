@@ -3,8 +3,8 @@
     <app-outer-frame></app-outer-frame>
   </div>
   <div class="wrapper">
-    <div class="scroll-container"  [ngStyle]="{'overflow' : 'hidden', 'outline' : 'none'}">
-      <div #scrollContent class="scroll-content" [ngStyle]="{'transform' : translate}">
+    <div class="scroll-container">
+      <div class="scroll-content">
         <div class="wrapper_inner">
           <hr class="spacer100">
           <section @fadeIn class="project-header">
@@ -130,7 +130,6 @@
           </section>
         </div>
       </div>
-      <app-scroll-bar></app-scroll-bar>
     </div>
   </div>
   <div @fadeInOut class="transition-bg"></div>

@@ -30,41 +30,41 @@ import {
 })
 
 
-export class ProjectsComponent implements OnInit, AfterViewInit{
-  translate = 'translate3d(0px, 0px, 0px)';
-  offSet = 0;
-  value = 50;
+export class ProjectsComponent implements OnInit{
+  // translate = 'translate3d(0px, 0px, 0px)';
+  // offSet = 0;
+  // value = 50;
 
-  @ViewChild('scrollContent') scrollContainer!: ElementRef;
+  // @ViewChild('scrollContent') scrollContainer!: ElementRef;
 
   constructor() { }
-  ngAfterViewInit(): void {
-    window.addEventListener("wheel", (event: any) => {
-      console.log("SCROLLING");
-      let rect = this.scrollContainer.nativeElement.getBoundingClientRect();
-      console.log(rect);
+  // ngAfterViewInit(): void {
+  //   window.addEventListener("wheel", (event: any) => {
+  //     console.log("SCROLLING");
+  //     let rect = this.scrollContainer.nativeElement.getBoundingClientRect();
+  //     console.log(rect);
 
-      if (event.deltaY < 0) {
-        console.log('scrolling up');
+  //     if (event.deltaY < 0) {
+  //       console.log('scrolling up');
         
-        this.offSet += this.value;
-      } else if (event.deltaY > 0) {
-        console.log('scrolling down');
-        this.offSet -= this.value; 
-      }
-      this.scroll();
+  //       this.offSet += this.value;
+  //     } else if (event.deltaY > 0) {
+  //       console.log('scrolling down');
+  //       this.offSet -= this.value; 
+  //     }
+  //     this.scroll();
       
-    });
-  }
+  //   });
+  
 
   ngOnInit(): void {
  
   }
 
-  scroll() {
-    this.translate = `translate3d(0px, ${this.offSet}px, 0px)`;
+  // scroll() {
+  //   this.translate = `translate3d(0px, ${this.offSet}px, 0px)`;
     
-  }
+  // }
   
 }
 
