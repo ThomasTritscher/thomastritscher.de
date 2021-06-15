@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { LayerChangeService } from '../services/layer-change.service';
 
 
 @Component({
@@ -42,7 +43,7 @@ export class ContactComponent implements OnInit {
   counter = 0;
   
 
-  constructor() { }
+  constructor(public layer: LayerChangeService) { }
 
   ngOnInit(): void {
 
@@ -98,6 +99,12 @@ export class ContactComponent implements OnInit {
 
     this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
 
+    this.layer.default_length = 'translate(' + -30 + '%)';
+    this.layer.default_length1 = 'translate(' + 0 + '%)';
+    this.layer.default_length2 = 'translate(' + 0 + '%)';
+    this.layer.default_length3 = 'translate(' + 0 + '%)';
+    this.layer.runout = 'translateY(' + 0 + '%)';
+
   }
 
   firstWheelEvent() {
@@ -110,6 +117,8 @@ export class ContactComponent implements OnInit {
     this.thirdText = 'translate3d(0px, -145%, 0px)';
     this.fourthText = 'translate3d(0px, -145%, 0px)';
     this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
+    this.layer.scrollSpan();
+    this.layer.translateScrollhintBar();
 
   }
   secondWheelEvent() {
@@ -122,6 +131,7 @@ export class ContactComponent implements OnInit {
     this.thirdText = 'translate3d(0px, 0%, 0px)';
     this.fourthText = 'translate3d(0px, -145%, 0px)';
     this.defaultImgPosition = 'translate3d(0px, 0px, 0px)';
+    this.layer.translateScrollhintBar2();
 
   }
   thirdWheelEvent() {
@@ -134,6 +144,7 @@ export class ContactComponent implements OnInit {
     this.thirdText = 'translate3d(0px, -145%, 0px)';
     this.fourthText = 'translate3d(0px, 0%, 0px)';
     this.defaultImgPosition = 'translate3d(0px, -600px, 0px)';
+    this.layer.translateScrollhintBar3();
   }
 
 

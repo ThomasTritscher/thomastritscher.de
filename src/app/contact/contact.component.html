@@ -1,11 +1,36 @@
 <div class="main-wrapper">
   <div>
-    <app-outer-frame></app-outer-frame>
+    <app-outer-frame>
+    </app-outer-frame>
   </div>
 </div>
 <div>
   <div class="theme-background">
-    <app-scrollhint></app-scrollhint>
+    <div class="scroll-nav">
+      <div class="scroll-nav-box">
+        <div class="scroll-nav-bar">
+          <div [ngStyle]="{'transform' : layer.default_length}" class="bar-bg"></div>
+        </div>
+        <div class="scroll-nav-bar">
+          <div [ngStyle]="{'transform' : layer.default_length1}" class="bar-bg"></div>
+        </div>
+        <div class="scroll-nav-bar">
+          <div [ngStyle]="{'transform' : layer.default_length2}" class="bar-bg"></div>
+        </div>
+        <div class="scroll-nav-bar">
+          <div [ngStyle]="{'transform' : layer.default_length3}" class="bar-bg"></div>
+        </div>
+      </div>
+      <div [ngStyle]="{'transform' : layer.runout}" class="scroll-nav-scripture">
+        <span>ScrollDown</span>
+        <div class="scroll-vertical-line"></div>
+      </div>
+    </div>
+    <div class="mobile-hint">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
   <section class="h h-theme-dark" [ngStyle]="{'zIndex' : z_active}">
     <h1 class="h-h1">
