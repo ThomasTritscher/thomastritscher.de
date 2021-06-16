@@ -70,26 +70,26 @@ export class MainComponent implements OnInit {
 
 
 
-      if (this.counter == 5) {
+      if (this.counter == 3) {
         this.transformBg.switchBgToZero();
         this.layer.firstWheelEvent();
       }
 
 
 
-      if (this.counter == 8) {
+      if (this.counter == 5) {
         this.layer.secondWheelEvent();
         this.transformBg.switchBgToZero();
       }
 
 
-      if (this.counter == 11) {
+      if (this.counter == 7) {
         this.layer.thirdWheelEvent();
         this.transformBg.switchBgToFull();
       }
 
 
-      if (this.counter > 12) {
+      if (this.counter > 8) {
         this.counter = 0;
         this.transformBg.startBg();
         this.layer.backToStartScreen();

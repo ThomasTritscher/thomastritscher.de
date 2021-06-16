@@ -1,3 +1,7 @@
+.h{
+  pointer-events: all;
+}
+
 .theme-background {
   position  : fixed;
   top       : 0;
@@ -119,8 +123,6 @@
   }
 }
 
-
-
 .content-t {
   display   : block;
   transition: all 1s ease;
@@ -205,7 +207,7 @@
 }
 
 
-.hover_state:hover~.cursor {
+.hover_blur:hover~.cursor {
   transform       : translate(-50%, -50%) scale(2.5);
   background-color: var(--accentcolor);
   opacity         : 0.8;
@@ -213,7 +215,7 @@
 
 }
 
-.hover_state:hover~.cursor2 {
+.hover_blur:hover~.cursor2 {
   opacity: 0;
 }
 
