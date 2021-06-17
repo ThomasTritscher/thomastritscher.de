@@ -43,6 +43,7 @@ export class ContactComponent implements OnInit {
   counter = 0;
   touchStart: any;
   swipeDirection: any; //var for touch direction mobile
+  startWheel:any; //var for Touchpad
 
 
   constructor(public layer: LayerChangeService) { }
@@ -51,36 +52,46 @@ export class ContactComponent implements OnInit {
 
     window.addEventListener("wheel", (event: any) => {
 
-      if (event.deltaY < 0) {
-
-        this.counter--;
-      } else if (event.deltaY > 0) {
-
-        this.counter++;
-
+      if(this.startWheel ===  undefined){//first wheel
+        this.startWheel = new Date().getTime();
+        if (event.deltaY < 0) { //scrolling up
+          this.counter--;
+        } else if (event.deltaY > 0) {// scrolling down
+          this.counter++;
+        }
       }
 
-      if (this.counter < 2) {
+      const elapse = new Date().getTime() - this.startWheel;
+      if(elapse > 700){
+        this.startWheel = new Date().getTime();
+        if (event.deltaY < 0) { //scrolling up
+          this.counter--;
+        } else if (event.deltaY > 0) {// scrolling down
+          this.counter++;
+        }
+      }
+
+      if (this.counter < 1) {
         this.startScreen();
       }
 
 
-      if (this.counter == 3) {
+      if (this.counter == 2) {
         this.firstWheelEvent();
       }
 
 
-      if (this.counter == 5) {
+      if (this.counter == 3) {
         this.secondWheelEvent();
       }
 
 
-      if (this.counter == 7) {
+      if (this.counter == 4) {
         this.thirdWheelEvent();
       }
 
 
-      if (this.counter > 8) {
+      if (this.counter > 5) {
         this.counter = 0;
         this.startScreen();
       }

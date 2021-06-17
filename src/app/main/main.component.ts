@@ -49,6 +49,7 @@ export class MainComponent implements OnInit {
 
   constructor(public transformBg: TransformBGService, public layer: LayerChangeService, public translate: TransitionBgService) { }
 
+  startWheel:any; //var for Touchpad
   counter = 0;
   touchStart: any;
   swipeDirection: any; //var for touch direction mobile
@@ -57,42 +58,52 @@ export class MainComponent implements OnInit {
     //scroll events for Desktop
     window.addEventListener("wheel", (event: any) => {
       console.log(this.counter);
-      if (event.deltaY < 0) {
-        console.log('scrolling up');
-        this.counter--;
-      } else if (event.deltaY > 0) {
-        console.log('scrolling down');
-        this.counter++;
-
+      if(this.startWheel ===  undefined){//first wheel
+        this.startWheel = new Date().getTime();
+        if (event.deltaY < 0) { //scrolling up
+          this.counter--;
+        } else if (event.deltaY > 0) {// scrolling down
+          this.counter++;
+        }
       }
 
-      if (this.counter < 2) {
+      const elapse = new Date().getTime() - this.startWheel;
+      if(elapse > 700){
+        this.startWheel = new Date().getTime();
+        if (event.deltaY < 0) { //scrolling up
+          this.counter--;
+        } else if (event.deltaY > 0) {// scrolling down
+          this.counter++;
+        }
+      }
+
+      if (this.counter < 1) {
         this.transformBg.startBg();
         this.layer.backToStartScreen();
       }
 
 
 
-      if (this.counter == 3) {
+      if (this.counter == 2) {
         this.transformBg.switchBgToZero();
         this.layer.firstWheelEvent();
       }
 
 
 
-      if (this.counter == 5) {
+      if (this.counter == 3) {
         this.layer.secondWheelEvent();
         this.transformBg.switchBgToZero();
       }
 
 
-      if (this.counter == 7) {
+      if (this.counter == 4) {
         this.layer.thirdWheelEvent();
         this.transformBg.switchBgToFull();
       }
 
 
-      if (this.counter > 8) {
+      if (this.counter > 5) {
         this.counter = 0;
         this.transformBg.startBg();
         this.layer.backToStartScreen();
