@@ -50,8 +50,11 @@ export class MainComponent implements OnInit {
   constructor(public transformBg: TransformBGService, public layer: LayerChangeService, public translate: TransitionBgService) { }
 
   counter = 0;
+  touchStart: any;
+  swipeDirection: any; //var for touch direction mobile
 
   ngOnInit(): void {
+    //scroll events for Desktop
     window.addEventListener("wheel", (event: any) => {
       console.log(this.counter);
       if (event.deltaY < 0) {
@@ -96,6 +99,56 @@ export class MainComponent implements OnInit {
       }
 
 
+      if (this.counter < 0) {
+        this.counter = 0;
+      }
+    });
+
+     //touch events for mobile use
+    window.addEventListener("touchstart", (event: any)=>{
+      this.touchStart = event.touches[0].clientY;
+    });
+    window.addEventListener("touchmove", (event: any)=>{
+        let currentTouch = event.touches[0].clientY;
+        if(currentTouch < this.touchStart){
+          //screen touch up
+          this.swipeDirection = "up";
+        }
+        if(currentTouch > this.touchStart){
+         //screen touch down
+          this.swipeDirection = "down";
+        }
+    });
+
+
+    window.addEventListener("touchend", (event: any)=>{
+      if(this.swipeDirection == "up"){
+        this.counter--;
+      }
+      if(this.swipeDirection == "down"){
+        this.counter++;
+      }
+      if (this.counter < 1) {
+        this.transformBg.startBg();
+        this.layer.backToStartScreen();
+      }
+      if (this.counter == 2) {
+        this.transformBg.switchBgToZero();
+        this.layer.firstWheelEvent();
+      }
+      if (this.counter == 3) {
+        this.layer.secondWheelEvent();
+        this.transformBg.switchBgToZero();
+      }
+      if (this.counter == 4) {
+        this.layer.thirdWheelEvent();
+        this.transformBg.switchBgToFull();
+      }
+      if (this.counter > 5) {
+        this.counter = 0;
+        this.transformBg.startBg();
+        this.layer.backToStartScreen();
+      }
       if (this.counter < 0) {
         this.counter = 0;
       }

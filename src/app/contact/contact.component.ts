@@ -41,53 +41,99 @@ export class ContactComponent implements OnInit {
 
   defaultImgPosition = 'translate3d(0px, -600px, 0px)';
   counter = 0;
-  
+  touchStart: any;
+  swipeDirection: any; //var for touch direction mobile
+
 
   constructor(public layer: LayerChangeService) { }
 
   ngOnInit(): void {
 
     window.addEventListener("wheel", (event: any) => {
-     
+
       if (event.deltaY < 0) {
-        
+
         this.counter--;
       } else if (event.deltaY > 0) {
-       
+
         this.counter++;
 
       }
 
-        if (this.counter < 2) {
-          this.startScreen();
-        }
-      
+      if (this.counter < 2) {
+        this.startScreen();
+      }
 
-        if (this.counter == 3) {
-          this.firstWheelEvent();
-        }
-      
 
-        if (this.counter == 5) {
-          this.secondWheelEvent();
-        }
-      
+      if (this.counter == 3) {
+        this.firstWheelEvent();
+      }
 
-        if (this.counter == 7) {
-          this.thirdWheelEvent();
-        }
-      
 
-        if (this.counter > 8) {
-          this.counter = 0;
-          this.startScreen();
-        }
-      
+      if (this.counter == 5) {
+        this.secondWheelEvent();
+      }
+
+
+      if (this.counter == 7) {
+        this.thirdWheelEvent();
+      }
+
+
+      if (this.counter > 8) {
+        this.counter = 0;
+        this.startScreen();
+      }
+
 
       if (this.counter < 0) {
         this.counter = 0;
       }
 
+    });
+    //touch events for mobile use
+    window.addEventListener("touchstart", (event: any) => {
+      this.touchStart = event.touches[0].clientY;
+    });
+    window.addEventListener("touchmove", (event: any) => {
+      let currentTouch = event.touches[0].clientY;
+      if (currentTouch < this.touchStart) {
+        //screen touch up
+        this.swipeDirection = "up";
+      }
+      if (currentTouch > this.touchStart) {
+        //screen touch down
+        this.swipeDirection = "down";
+      }
+    });
+
+
+    window.addEventListener("touchend", (event: any) => {
+      if (this.swipeDirection == "up") {
+        this.counter--;
+      }
+      if (this.swipeDirection == "down") {
+        this.counter++;
+      }
+      if (this.counter < 1) {
+        this.startScreen();
+      }
+      if (this.counter == 2) {
+        this.firstWheelEvent();
+      }
+      if (this.counter == 3) {
+        this.secondWheelEvent();
+      }
+      if (this.counter == 4) {
+        this.thirdWheelEvent();
+      }
+      if (this.counter > 5) {
+        this.counter = 0;
+        this.startScreen();
+      }
+      if (this.counter < 0) {
+        this.counter = 0;
+      }
     });
   }
 
