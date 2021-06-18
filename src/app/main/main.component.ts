@@ -57,7 +57,6 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
     //scroll events for Desktop
     window.addEventListener("wheel", (event: any) => {
-      console.log(this.counter);
       if(this.startWheel ===  undefined){//first wheel
         this.startWheel = new Date().getTime();
         if (event.deltaY < 0) { //scrolling up
@@ -133,10 +132,10 @@ export class MainComponent implements OnInit {
 
 
     window.addEventListener("touchend", (event: any)=>{
-      if(this.swipeDirection == "up"){
+      if(this.swipeDirection == "down"){
         this.counter--;
       }
-      if(this.swipeDirection == "down"){
+      if(this.swipeDirection == "up"){
         this.counter++;
       }
       if (this.counter < 1) {

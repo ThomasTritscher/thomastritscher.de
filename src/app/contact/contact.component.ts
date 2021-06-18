@@ -103,10 +103,10 @@ export class ContactComponent implements OnInit {
 
 
     window.addEventListener("touchend", (event: any) => {
-      if (this.swipeDirection == "up") {
+      if (this.swipeDirection == "down") {
         this.counter--;
       }
-      if (this.swipeDirection == "down") {
+      if (this.swipeDirection == "up") {
         this.counter++;
       }
       if (this.counter < 1) {
