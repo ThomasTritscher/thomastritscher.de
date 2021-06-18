@@ -10,23 +10,6 @@ import { LayerChangeService } from '../services/layer-change.service';
 })
 export class ContactComponent implements OnInit {
 
-  // Cursor follower
-  @ViewChild('cursor')
-  cursor!: ElementRef;
-  @ViewChild('cursor2')
-  cursor2!: ElementRef;
-
-  ngAfterViewInit(): void {
-    document.addEventListener('mousemove', e => {
-      this.cursor.nativeElement.style.cssText = this.cursor2.nativeElement.style.cssText =
-        'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;';
-    });
-  }
-
-  //End cursor follower
-
-
-
   //var for Layers
   z_active = 9;
   z_inactive = 0;
