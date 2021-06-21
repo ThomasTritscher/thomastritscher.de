@@ -17,28 +17,32 @@
     min-width: 8em;
 
     @media only screen and (max-width: 770px) {
-      float: none;
-      padding  : 20px 0 30px;
-      
+      float  : none;
+      padding: 20px 0 30px;
+
     }
+
     @media only screen and (max-width: 500px) {
-      padding  : 20px 0 30px;
-  
+      padding: 20px 0 30px;
+
     }
+
     @media only screen and (min-width: 1800px) {
       min-width: 16em;
     }
   }
+
   @media only screen and (max-width: 770px) {
-    top: 48%;
-    
+    top   : 48%;
+    margin: 2% 0 0 5.5%;
+
   }
 
   @media only screen and (max-width: 500px) {
     margin: 2% 0 0 8.5%;
 
   }
-  
+
 }
 
 .h-nav-wrapper {
@@ -57,7 +61,7 @@
     text-decoration: none;
     text-transform : uppercase;
     display        : block;
-    
+
     @media only screen and (max-width: 770px) {
       font-size      : 4vw;
       font-weight    : 500;
@@ -67,6 +71,7 @@
 
     }
   }
+
   @media only screen and (max-width: 770px) {
     height: 4vw;
   }
@@ -94,8 +99,7 @@
     }
   }
 
-  span{
+  span {
     cursor: pointer;
   }
 }
-
